@@ -1,6 +1,4 @@
-# 直连列表
+# 模板
+# USER-AGENT,13th.tech*
+# USER-AGENT,%E5%BB%BA*.com
 
-# MyList
-DOMAIN-SUFFIX,13th.tech
-DOMAIN-SUFFIX,423down.com
-DOMAIN-SUFFIX,bokecc.com
