@@ -1,0 +1,9 @@
+#以下是指纹浏览器规则
+DOMAIN-SUFFIX,decodo.com
+DOMAIN-SUFFIX,smartproxy.com
+DOMAIN-SUFFIX,ixbrowser.com
+DOMAIN-SUFFIX,ix-y.com
+DOMAIN-SUFFIX,ixspy.cn
+DOMAIN-SUFFIX,ixspy.com
+DOMAIN-SUFFIX,bitbrowser.cn
+DOMAIN-SUFFIX,bitbrowser.net
