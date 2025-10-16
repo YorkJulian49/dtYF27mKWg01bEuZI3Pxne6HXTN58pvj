@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "clash.razord.top",
+        "yacd.metacubex.one",
+        "yacd.haishan.me",
+        "d.metacubex.one"
+      ]
+    }
+  ]
+}

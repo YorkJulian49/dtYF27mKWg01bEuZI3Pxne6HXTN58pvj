@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "cdn.jsdelivr.net",
+        "testingcf.jsdelivr.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ghproxy.com",
+        "time.windows.com",
+        "readest.com"
+      ]
+    },
+    {
+      "process_name": [
+        "BaiduNetdisk",
+        "aDrive",
+        "i4Tools",
+        "TMSpeech",
+        "readest",
+        "Thunder",
+        "ipmsg",
+        "Macast",
+        "deskflow",
+        "SunloginClient",
+        "1Remote",
+        "WeChat",
+        "Wexin",
+        "WeChatAppEx",
+        "QQ",
+        "YoudaoDict",
+        "YoudaoDictHelper",
+        "localsend_app"
+      ]
+    }
+  ]
+}
