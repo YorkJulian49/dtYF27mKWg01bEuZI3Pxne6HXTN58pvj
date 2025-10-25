@@ -1,4 +1,9 @@
 payload:
+  - DOMAIN,clash.razord.top
+  - DOMAIN,yacd.metacubex.one
+  - DOMAIN,yacd.haishan.me
+  - DOMAIN,d.metacubex.one
+  - DOMAIN,board.zash.run.place
   - DOMAIN,cdn.jsdelivr.net
   - DOMAIN,testingcf.jsdelivr.net
   - DOMAIN-SUFFIX,ghproxy.com
