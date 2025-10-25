@@ -9,10 +9,16 @@
     },
     {
       "domain_suffix": [
+        "clash.razord.top",
+        "yacd.metacubex.one",
+        "yacd.haishan.me",
+        "d.metacubex.one",
+        "board.zash.run.place",
         "ghproxy.com",
         "time.windows.com",
         "readest.com"
       ]
     }
   ]
+
 }
