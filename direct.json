@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "cdn.jsdelivr.net",
+        "testingcf.jsdelivr.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ghproxy.com",
+        "time.windows.com",
+        "readest.com"
+      ]
+    }
+  ]
+}

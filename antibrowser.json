@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "decodo.com",
+        "smartproxy.com",
+        "virtualbrowser.cc",
+        "ixbrowser.com",
+        "ix-y.com",
+        "ixspy.cn",
+        "ixspy.com",
+        "bitbrowser.cn",
+        "bitbrowser.net",
+        "gologin.com"
+      ]
+    }
+  ]
+}
