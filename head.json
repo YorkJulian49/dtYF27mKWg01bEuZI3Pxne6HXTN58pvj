@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "protocol": "quic",
+      "outbound": "block"
+    },
+    {
+      "network": "udp",
+      "port": [
+        3478,
+        3549,
+        19302,
+        19305
+      ],
+      "outbound": "block"
+    },
+    {
+      "port": 853,
+      "outbound": "block"
+    }
+  ]
+}
