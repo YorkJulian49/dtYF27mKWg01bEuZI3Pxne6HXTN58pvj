@@ -2,7 +2,7 @@
   "version": 3,
   "rules": [
     {
-      "protocol": "quic",
+      "protocol": "quic"
     },
     {
       "network": "udp",
@@ -18,6 +18,7 @@
     }
   ]
 }
+
 
 
 
