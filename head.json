@@ -2,16 +2,23 @@
   "version": 3,
   "rules": [
     {
-      "protocol": "quic"
-    },
-    {
-      "network": "udp",
-      "port": [3478, 3549, 19302, 19305]
-    },
-    {
-      "port": 853
+      "type": "logical",
+      "mode": "or",
+      "rules": [
+        {
+          "protocol": "quic"
+        },
+        {
+          "network": "udp",
+          "port": [3478, 3549, 19302, 19305]
+        },
+        {
+          "port": 853
+        }
+      ]
     }
   ]
 }
+
 
 
