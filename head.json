@@ -2,7 +2,10 @@
   "version": 1,
   "rules": [
     {
-      "protocol": "quic"
+      "network": "udp",
+      "port": [
+        443
+      ]
     },
     {
       "network": "udp",
@@ -17,4 +20,5 @@
       "port": 853
     }
   ]
+
 }
