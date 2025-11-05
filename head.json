@@ -2,23 +2,30 @@
   "version": 3,
   "rules": [
     {
-      "network": "udp",
-      "port": 443
-    },
-    {
-      "network": "udp",
-      "port": [
-        3478,
-        3549,
-        19302,
-        19305
+      "type": "logical",
+      "mode": "or",
+      "rules": [
+        {
+          "network": "udp",
+          "port": 443
+        },
+        {
+          "network": "udp",
+          "port": [
+            3478,
+            3549,
+            19302,
+            19305
+          ]
+        },
+        {
+          "port": 853
+        }
       ]
-    },
-    {
-      "port": 853
     }
   ]
 }
+
 
 
 
