@@ -3,9 +3,7 @@
   "rules": [
     {
       "network": "udp",
-      "port": [
-        443
-      ]
+      "port": 443
     },
     {
       "network": "udp",
@@ -22,3 +20,4 @@
   ]
 
 }
+
