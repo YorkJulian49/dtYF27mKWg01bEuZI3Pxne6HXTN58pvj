@@ -6,7 +6,8 @@
       "mode": "or",
       "rules": [
         {
-          "protocol": "quic"
+          "network": "udp",
+          "port": 443
         },
         {
           "network": "udp",
@@ -19,6 +20,7 @@
     }
   ]
 }
+
 
 
 
