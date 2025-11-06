@@ -2,6 +2,11 @@
   "version": 3,
   "rules": [
     {
+      "domain": [
+        "bitbrowser-images.oss-cn-hongkong.aliyuncs.com"
+      ]
+    },
+    {
       "domain_suffix": [
         "decodo.com",
         "smartproxy.com",
@@ -16,5 +21,5 @@
       ]
     }
   ]
-
 }
+
