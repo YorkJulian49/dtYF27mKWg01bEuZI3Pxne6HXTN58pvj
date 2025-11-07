@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "bitbrowser-images.oss-accelerate.aliyuncs.com",
         "bitbrowser-images.oss-cn-hongkong.aliyuncs.com"
       ]
     },
@@ -22,4 +23,5 @@
     }
   ]
 }
+
 
