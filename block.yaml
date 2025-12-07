@@ -1,4 +1,8 @@
 payload:
+  # 以下是pixel的ota更新
+  - DOMAIN,ota.googlezip.net
+  - DOMAIN,ota-cache1.googlezip.net
+  - DOMAIN,ota-cache2.googlezip.net
   # 以下是extension
   - DOMAIN,update.googleapis.com
   - DOMAIN,clients2.google.com
@@ -28,4 +32,5 @@ payload:
   - DOMAIN-SUFFIX,vrbrothers.com
   - DOMAIN-SUFFIX,appcenter.ms
   - DOMAIN-SUFFIX,firebase.io
+
   - DOMAIN-SUFFIX,crashlytics.com
