@@ -1,13 +1,13 @@
-#以下是pixel的更新规则
+# 以下是pixel的更新规则
 DOMAIN,android.googleapis.com
 DOMAIN,ota.googlezip.net
 DOMAIN,ota-cache1.googlezip.net
 DOMAIN,ota-cache2.googlezip.net
-#以下是浏览器
+# 以下是浏览器
 DOMAIN,update.googleapis.com
 DOMAIN,clients2.google.com
 DOMAIN,updates.bravesoftware.com
-#以下是屏蔽apple更新规则
+# 以下是屏蔽apple更新规则
 DOMAIN,ocsp.apple.com
 DOMAIN,mesu.apple.com
 DOMAIN,gdmf.apple.com
@@ -18,6 +18,7 @@ DOMAIN,world-gen.g.aaplimg.com
 DOMAIN,radarsubmissions.apple.com
 DOMAIN,iphonesubmissions.apple.com
 DOMAIN,ocsp.int-x3.letsencrypt.org
+
 
 
 
