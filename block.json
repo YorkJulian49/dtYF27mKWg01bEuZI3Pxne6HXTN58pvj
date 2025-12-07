@@ -3,9 +3,9 @@
   "rules": [
     {
       "domain": [
-        "ota.googlezip.com",
-        "ota-cache1.googlezip.com",
-        "ota-cache2.googlezip.com",
+        "ota.googlezip.net",
+        "ota-cache1.googlezip.net",
+        "ota-cache2.googlezip.net",
         "update.googleapis.com",
         "clients2.google.com",
         "updates.bravesoftware.com",
@@ -50,5 +50,6 @@
   ]
 
 }
+
 
 
