@@ -5,7 +5,7 @@
       "domain": [
         "ota.googlezip.com",
         "ota-cache1.googlezip.com",
-        "ota-cache1.googlezip.com",
+        "ota-cache2.googlezip.com",
         "update.googleapis.com",
         "clients2.google.com",
         "updates.bravesoftware.com",
@@ -50,4 +50,5 @@
   ]
 
 }
+
 
