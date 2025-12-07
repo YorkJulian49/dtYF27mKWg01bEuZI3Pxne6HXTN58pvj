@@ -3,7 +3,7 @@ payload:
   - DOMAIN,ota.googlezip.net
   - DOMAIN,ota-cache1.googlezip.net
   - DOMAIN,ota-cache2.googlezip.net
-  # 以下是extension
+  # 以下是浏览器
   - DOMAIN,update.googleapis.com
   - DOMAIN,clients2.google.com
   - DOMAIN,updates.bravesoftware.com
@@ -18,4 +18,5 @@ payload:
   - DOMAIN,radarsubmissions.apple.com
   - DOMAIN,iphonesubmissions.apple.com
   - DOMAIN,ocsp.int-x3.letsencrypt.org
+
 
