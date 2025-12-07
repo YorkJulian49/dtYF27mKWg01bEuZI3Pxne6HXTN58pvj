@@ -20,36 +20,10 @@
         "iphonesubmissions.apple.com",
         "ocsp.int-x3.letsencrypt.org"
       ]
-    },
-    {
-      "domain_suffix": [
-        "cidian.youdao.com",
-        "wisecleaner.net",
-        "wisecleaner.com",
-        "ccleaner.com",
-        "sogou.com",
-        "ksosoft.com",
-        "ksord.com",
-        "wps.cn",
-        "wpscdn.cn",
-        "reyun.com",
-        "vrbrothers.com",
-        "appcenter.ms",
-        "mgtool.cn",
-        "mob.com",
-        "appota.cn",
-        "multiopen.cn",
-        "analysys.cn",
-        "jpush.cn",
-        "jpush.io",
-        "ysepan.com",
-        "ys168.com",
-        "cidian.youdao.com"
-      ]
     }
   ]
-
 }
+
 
 
 
