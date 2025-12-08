@@ -1,6 +1,5 @@
 payload:
   # 以下是pixel的更新规则
-  - DOMAIN,android.googleapis.com
   - DOMAIN,ota.googlezip.net
   - DOMAIN,ota-cache1.googlezip.net
   - DOMAIN,ota-cache2.googlezip.net
@@ -19,6 +18,7 @@ payload:
   - DOMAIN,radarsubmissions.apple.com
   - DOMAIN,iphonesubmissions.apple.com
   - DOMAIN,ocsp.int-x3.letsencrypt.org
+
 
 
 
