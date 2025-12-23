@@ -4,22 +4,23 @@
     {
       "domain": [
         "cdn.jsdelivr.net",
-        "testingcf.jsdelivr.net"
-      ]
-    },
-    {
-      "domain_suffix": [
+        "testingcf.jsdelivr.net",
         "clash.razord.top",
         "yacd.metacubex.one",
         "yacd.haishan.me",
         "d.metacubex.one",
         "board.zash.run.place",
+        "time.windows.com"
+      ]
+    },
+    {
+      "domain_suffix": [
         "ghproxy.com",
-        "time.windows.com",
         "readest.com"
       ]
     }
   ]
 
 }
+
 
