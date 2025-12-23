@@ -3,13 +3,13 @@
   "rules": [
     {
       "domain": [
-        "cdn.jsdelivr.net",
-        "testingcf.jsdelivr.net",
         "clash.razord.top",
         "yacd.metacubex.one",
         "yacd.haishan.me",
         "d.metacubex.one",
         "board.zash.run.place",
+        "cdn.jsdelivr.net",
+        "testingcf.jsdelivr.net",
         "time.windows.com"
       ]
     },
@@ -22,5 +22,6 @@
   ]
 
 }
+
 
 
