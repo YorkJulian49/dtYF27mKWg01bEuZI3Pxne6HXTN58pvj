@@ -1,6 +1,7 @@
 payload:
   - DOMAIN,bitbrowser-images.oss-accelerate.aliyuncs.com
   - DOMAIN,bitbrowser-images.oss-cn-hongkong.aliyuncs.com
+  - DOMAIN,browser-extend-hk.oss-cn-hongkong.aliyuncs.com
   - DOMAIN-SUFFIX,decodo.com
   - DOMAIN-SUFFIX,smartproxy.com
   - DOMAIN-SUFFIX,virtualbrowser.cc
@@ -11,3 +12,4 @@ payload:
   - DOMAIN-SUFFIX,bitbrowser.cn
   - DOMAIN-SUFFIX,bitbrowser.net
   - DOMAIN-SUFFIX,gologin.com
+
