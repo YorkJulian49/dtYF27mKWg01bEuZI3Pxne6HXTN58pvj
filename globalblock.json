@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "api.mgtool.cn",
         "ota.googlezip.net",
         "ota-cache1.googlezip.net",
         "ota-cache2.googlezip.net",
@@ -23,6 +24,7 @@
     }
   ]
 }
+
 
 
 
