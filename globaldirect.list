@@ -7,10 +7,7 @@ DOMAIN,board.zash.run.place
 DOMAIN,cdn.jsdelivr.net
 DOMAIN,testingcf.jsdelivr.net
 DOMAIN,time.windows.com
+DOMAIN,api.langge.cf
+DOMAIN,tts.gyks.cf
 DOMAIN-SUFFIX,ghproxy.com
 DOMAIN-SUFFIX,readest.com
-DOMAIN-SUFFIX,langge.cf
-
-
-
-
