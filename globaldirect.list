@@ -9,5 +9,7 @@ DOMAIN,testingcf.jsdelivr.net
 DOMAIN,time.windows.com
 DOMAIN,api.langge.cf
 DOMAIN,tts.gyks.cf
+DOMAIN,font.gyks.cf
 DOMAIN-SUFFIX,ghproxy.com
 DOMAIN-SUFFIX,readest.com
+
