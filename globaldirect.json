@@ -10,18 +10,20 @@
         "board.zash.run.place",
         "cdn.jsdelivr.net",
         "testingcf.jsdelivr.net",
-        "time.windows.com"
+        "time.windows.com",
+        "api.langge.cf",
+        "tts.gyks.cf"
       ]
     },
     {
       "domain_suffix": [
         "ghproxy.com",
-        "readest.com",
-        "langge.cf"
+        "readest.com"
       ]
     }
   ]
 }
+
 
 
 
