@@ -12,7 +12,8 @@
         "testingcf.jsdelivr.net",
         "time.windows.com",
         "api.langge.cf",
-        "tts.gyks.cf"
+        "tts.gyks.cf",
+        "font.gyks.cf"
       ]
     },
     {
@@ -23,3 +24,4 @@
     }
   ]
 }
+
