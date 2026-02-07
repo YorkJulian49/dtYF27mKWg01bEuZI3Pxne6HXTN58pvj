@@ -46,8 +46,6 @@ if(url.includes("viewunite.v1.View/View")){
         });
     }
     body = processNewBody(ViewReply.toBinary(viewReplyObj));
-} else {
-    $notification.post('bilibili-proto', "路径匹配错误:", url);
 }
 
 if(isQuanX){
