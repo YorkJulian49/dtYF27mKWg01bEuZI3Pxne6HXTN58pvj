@@ -46,6 +46,12 @@ if(url.includes("viewunite.v1.View/View")){
         });
     }
     body = processNewBody(ViewReply.toBinary(viewReplyObj));
+}  else if(url.includes("Dynamic/DynAll")){
+    console.log('动态DynAll');
+    const dynAllReplyObj = DynAllReply.fromBinary(unGzipBody,{readUnknownField: true});
+    body = processNewBody(DynAllReply.toBinary(dynAllReplyObj));
+} else {
+    $notification.post('bilibili-proto', "路径匹配错误:", url);
 }
 
 if(isQuanX){
