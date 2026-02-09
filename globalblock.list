@@ -22,3 +22,5 @@ DOMAIN,ocsp.int-x3.letsencrypt.org
 # 以下是麒麟虚拟机同步器规则
 DOMAIN,xzy1y.ysepan.com
 DOMAIN,xzy1y.ys168.com
+# 以下是雷电模拟器规则
+DOMAIN,ad.ldplayer.net
