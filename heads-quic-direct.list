@@ -1,2 +1,1 @@
 AND,((PROTOCOL,UDP),(DST-PORT,443),(GEOIP,CN,no-resolve))
-AND,((PROTOCOL,UDP),(DEST-PORT,443),(RULE-SET,geoip-cn,no-resolve))
