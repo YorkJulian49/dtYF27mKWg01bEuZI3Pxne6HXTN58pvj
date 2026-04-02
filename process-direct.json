@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "process_name": [
+        "QQ",
+        "Weixin",
+        "WeChatAppEx",
+        "YoudaoDict",
+        "YoudaoDictHelper",
+        "aDrive",
+        "BaiduNetdisk",
+        "baidunetdiskhost",
+        "BaiduNetdiskUnite",
+        "Thunder",
+        "APlayer"
+      ]
+    }
+  ]
+}
