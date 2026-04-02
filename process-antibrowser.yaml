@@ -1,3 +1,3 @@
 payload:
-  - PROCESS-NAME,proxy-manager-desktop
-  - PROCESS-NAME,multi-local-proxy-open
+  - PROCESS-NAME,proxy-manager-desktop.exe
+  - PROCESS-NAME,multi-local-proxy-open.exe
