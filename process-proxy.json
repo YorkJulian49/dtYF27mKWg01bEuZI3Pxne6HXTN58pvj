@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "process_name": [
+        "proxy-manager-desktop",
+        "multi-local-proxy-open",
+        "QQ",
+        "Weixin",
+        "WeChatAppEx",
+        "YoudaoDict",
+        "YoudaoDictHelper",
+        "aDrive",
+        "BaiduNetdisk",
+        "baidunetdiskhost",
+        "BaiduNetdiskUnite",
+        "Thunder",
+        "APlayer"
+      ]
+    }
+  ]
+}
