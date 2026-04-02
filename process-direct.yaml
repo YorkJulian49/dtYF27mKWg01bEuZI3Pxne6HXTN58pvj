@@ -1,6 +1,4 @@
 payload:
-  - PROCESS-NAME,proxy-manager-desktop,ANTIBROWSER
-  - PROCESS-NAME,multi-local-proxy-open,ANTIBROWSER
   - PROCESS-NAME,QQ,DIRECT
   - PROCESS-NAME,Weixin,DIRECT
   - PROCESS-NAME,WeChatAppEx,DIRECT
