@@ -1,12 +1,12 @@
 payload:
-  - PROCESS-NAME,QQ
-  - PROCESS-NAME,Weixin
-  - PROCESS-NAME,WeChatAppEx
-  - PROCESS-NAME,YoudaoDict
-  - PROCESS-NAME,YoudaoDictHelper
-  - PROCESS-NAME,aDrive
-  - PROCESS-NAME,BaiduNetdisk
-  - PROCESS-NAME,baidunetdiskhost
-  - PROCESS-NAME,BaiduNetdiskUnite
-  - PROCESS-NAME,Thunder
-  - PROCESS-NAME,APlayer
+  - PROCESS-NAME,QQ.exe
+  - PROCESS-NAME,Weixin.exe
+  - PROCESS-NAME,WeChatAppEx.exe
+  - PROCESS-NAME,YoudaoDict.exe
+  - PROCESS-NAME,YoudaoDictHelper.exe
+  - PROCESS-NAME,aDrive.exe
+  - PROCESS-NAME,BaiduNetdisk.exe
+  - PROCESS-NAME,baidunetdiskhost.exe
+  - PROCESS-NAME,BaiduNetdiskUnite.exe
+  - PROCESS-NAME,Thunder.exe
+  - PROCESS-NAME,APlayer.exe
