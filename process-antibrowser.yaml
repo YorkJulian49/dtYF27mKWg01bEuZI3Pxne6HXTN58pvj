@@ -1,0 +1,3 @@
+payload:
+  - PROCESS-NAME,proxy-manager-desktop,ANTIBROWSER
+  - PROCESS-NAME,multi-local-proxy-open,ANTIBROWSER
