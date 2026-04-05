@@ -3,18 +3,18 @@
   "rules": [
     {
       "process_name": [
-        "QQ",
-        "Weixin",
-        "WeChatAppEx",
-        "YoudaoDict",
-        "YoudaoDictHelper",
-        "aDrive",
-        "BaiduNetdisk",
-        "baidunetdiskhost",
-        "BaiduNetdiskUnite",
-        "Thunder",
-        "APlayer",
-        "Vibing"
+        "QQ.exe",
+        "Weixin.exe",
+        "WeChatAppEx.exe",
+        "YoudaoDict.exe",
+        "YoudaoDictHelper.exe",
+        "aDrive.exe",
+        "BaiduNetdisk.exe",
+        "baidunetdiskhost.exe",
+        "BaiduNetdiskUnite.exe",
+        "Thunder.exe",
+        "APlayer.exe",
+        "Vibing.exe"
       ]
     }
   ]
