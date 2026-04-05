@@ -8,6 +8,7 @@ payload:
   - DOMAIN,testingcf.jsdelivr.net
   - DOMAIN,time.windows.com
   - DOMAIN,music.kukuqaq.com
+  - DOMAIN,sub-store.vercel.app
   - DOMAIN-SUFFIX,ghproxy.com
   - DOMAIN-SUFFIX,readest.com
   - DOMAIN-SUFFIX,langge.cf
@@ -16,3 +17,4 @@ payload:
   - DOMAIN-SUFFIX,839797.xyz
   - DOMAIN-SUFFIX,1music.cc
   - DOMAIN-SUFFIX,adfgawidhioawjd.site
+  
