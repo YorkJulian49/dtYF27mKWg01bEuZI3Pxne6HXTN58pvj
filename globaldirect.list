@@ -8,6 +8,7 @@ DOMAIN,cdn.jsdelivr.net
 DOMAIN,testingcf.jsdelivr.net
 DOMAIN,time.windows.com
 DOMAIN,music.kukuqaq.com
+DOMAIN,sub-store.vercel.app
 DOMAIN-SUFFIX,ghproxy.com
 DOMAIN-SUFFIX,readest.com
 DOMAIN-SUFFIX,langge.cf
