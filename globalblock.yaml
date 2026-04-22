@@ -25,4 +25,3 @@ payload:
   - DOMAIN,xzy1y.ys168.com
   # 以下是雷电模拟器规则
   - DOMAIN,ad.ldplayer.net
-  - DOMAIN-SUFFIX,bitbrowser.cn
