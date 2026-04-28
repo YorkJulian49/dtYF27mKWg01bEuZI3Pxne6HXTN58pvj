@@ -9,6 +9,9 @@ payload:
   - PROCESS-NAME,baidunetdiskhost.exe
   - PROCESS-NAME,BaiduNetdiskUnite.exe
   - PROCESS-NAME,Thunder.exe
-  - PROCESS-NAME,APlayer.exe
+  - PROCESS-NAME,Xmp.exe
+  - PROCESS-NAME,xllite.exe
+  - PROCESS-NAME,DownloadSDKServer.exe
   - PROCESS-NAME,Vibing.exe
   - PROCESS-NAME,AweSun.exe
+  - PROCESS-NAME,awesun_guard.exe
