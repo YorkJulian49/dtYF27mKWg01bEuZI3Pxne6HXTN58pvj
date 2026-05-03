@@ -1,1 +1,0 @@
-AND,((PROTOCOL,UDP),(DEST-PORT,853),(GEOIP,CN,no-resolve))
