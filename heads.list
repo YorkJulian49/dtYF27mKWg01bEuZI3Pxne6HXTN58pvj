@@ -1,7 +1,4 @@
 AND,((PROTOCOL,UDP),(DST-PORT,443),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR,::/0,no-resolve))))
-AND,((PROTOCOL,UDP),(DST-PORT,3478),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR,::/0,no-resolve))))
-AND,((PROTOCOL,UDP),(DST-PORT,3549),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR,::/0,no-resolve))))
-AND,((PROTOCOL,UDP),(DST-PORT,19302),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR,::/0,no-resolve))))
-AND,((PROTOCOL,UDP),(DST-PORT,19305),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR,::/0,no-resolve))))
+AND,((PROTOCOL,UDP),(DST-PORT,3478,3549,19302,19305),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR,::/0,no-resolve))))
 AND,((PROTOCOL,UDP),(DST-PORT,853),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR,::/0,no-resolve))))
 AND,((PROTOCOL,UDP),(DOMAIN-KEYWORD,STUN))
