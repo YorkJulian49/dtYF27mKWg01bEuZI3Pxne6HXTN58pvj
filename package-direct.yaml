@@ -1,4 +1,6 @@
 payload:
+  - PROCESS-NAME,com.google.android.projection.gearhead #android auto
+  - PROCESS-NAME,com.google.android.apps.scone #adaptive connectivity services
   - PROCESS-NAME,com.tencent.mobileqq #QQ
   - PROCESS-NAME,com.tencent.mm #微信
   - PROCESS-NAME,com.youdao.dict #网易有道词典
@@ -13,3 +15,9 @@ payload:
   - PROCESS-NAME,com.tencent.lolm #英雄联盟手游
   - PROCESS-NAME,com.tencent.jkchess #金铲铲之战
   - PROCESS-NAME,com.tencent.tmgp.pubgmhd #和平精英
+  - PROCESS-NAME,de.danoeh.antennapod #antennapod
+  - PROCESS-NAME,com.apple.android.music #apple music
+  - PROCESS-NAME,com.cfdata #cf-data
+  - PROCESS-NAME,com.cfnat.manager #cfnat manager
+  - PROCESS-NAME,com.bilingify.readest #readest
+  
