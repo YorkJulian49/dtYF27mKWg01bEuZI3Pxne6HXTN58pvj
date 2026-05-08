@@ -1,1 +1,17 @@
-
+payload:
+  - PROCESS-NAME,QQ.exe
+  - PROCESS-NAME,Weixin.exe
+  - PROCESS-NAME,WeChatAppEx.exe
+  - PROCESS-NAME,YoudaoDict.exe
+  - PROCESS-NAME,YoudaoDictHelper.exe
+  - PROCESS-NAME,aDrive.exe
+  - PROCESS-NAME,BaiduNetdisk.exe
+  - PROCESS-NAME,baidunetdiskhost.exe
+  - PROCESS-NAME,BaiduNetdiskUnite.exe
+  - PROCESS-NAME,Thunder.exe
+  - PROCESS-NAME,xllite.exe
+  - PROCESS-NAME,DownloadSDKServer.exe
+  - PROCESS-NAME,Xmp.exe
+  - PROCESS-NAME,Vibing.exe
+  - PROCESS-NAME,AweSun.exe
+  - PROCESS-NAME,awesun_guard.exe
