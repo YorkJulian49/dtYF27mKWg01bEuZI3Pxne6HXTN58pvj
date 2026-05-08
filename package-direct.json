@@ -3,16 +3,20 @@
   "rules": [
     {
       "package_name": [
-        "QQ.exe",
-        "Weixin.exe",
-        "WeChatAppEx.exe",
-        "YoudaoDict.exe",
-        "YoudaoDictHelper.exe",
-        "aDrive.exe",
-        "BaiduNetdisk.exe",
-        "baidunetdiskhost.exe",
-        "BaiduNetdiskUnite.exe",
-        "Thunder.exe"
+        "com.tencent.mobileqq",
+        "com.tencent.mm",
+        "com.youdao.dict",
+        "com.alicloud.databox",
+        "com.baidu.netdisk",
+        "com.xunlei.downloadprovider",
+        "com.oray.sunlogin",
+        "com.eusoft.eudic",
+        "com.githubtvbox.osc.tk",
+        "io.legado.app.release"，
+        "com.tencent.tmgp.sgame",
+        "com.tencent.lolm",
+        "com.tencent.jkchess",
+        "com.tencent.tmgp.pubgmhd"
       ]
     }
   ]
