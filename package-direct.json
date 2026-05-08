@@ -1,1 +1,19 @@
-
+{
+  "version": 3,
+  "rules": [
+    {
+      "package_name": [
+        "QQ.exe",
+        "Weixin.exe",
+        "WeChatAppEx.exe",
+        "YoudaoDict.exe",
+        "YoudaoDictHelper.exe",
+        "aDrive.exe",
+        "BaiduNetdisk.exe",
+        "baidunetdiskhost.exe",
+        "BaiduNetdiskUnite.exe",
+        "Thunder.exe"
+      ]
+    }
+  ]
+}
