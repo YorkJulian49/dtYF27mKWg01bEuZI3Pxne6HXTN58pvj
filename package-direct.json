@@ -3,6 +3,8 @@
   "rules": [
     {
       "package_name": [
+        "com.google.android.projection.gearhead",
+        "com.google.android.apps.scone",
         "com.tencent.mobileqq",
         "com.tencent.mm",
         "com.youdao.dict",
@@ -16,7 +18,12 @@
         "com.tencent.tmgp.sgame",
         "com.tencent.lolm",
         "com.tencent.jkchess",
-        "com.tencent.tmgp.pubgmhd"
+        "com.tencent.tmgp.pubgmhd"，
+        "de.danoeh.antennapod",
+        "com.apple.android.music",
+        "com.cfdata",
+        "com.cfnat.manager",
+        "com.bilingify.readest"
       ]
     }
   ]
