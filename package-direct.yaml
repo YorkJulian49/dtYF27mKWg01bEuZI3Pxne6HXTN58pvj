@@ -1,17 +1,15 @@
 payload:
-  - PROCESS-NAME,QQ.exe
-  - PROCESS-NAME,Weixin.exe
-  - PROCESS-NAME,WeChatAppEx.exe
-  - PROCESS-NAME,YoudaoDict.exe
-  - PROCESS-NAME,YoudaoDictHelper.exe
-  - PROCESS-NAME,aDrive.exe
-  - PROCESS-NAME,BaiduNetdisk.exe
-  - PROCESS-NAME,baidunetdiskhost.exe
-  - PROCESS-NAME,BaiduNetdiskUnite.exe
-  - PROCESS-NAME,Thunder.exe
-  - PROCESS-NAME,xllite.exe
-  - PROCESS-NAME,DownloadSDKServer.exe
-  - PROCESS-NAME,Xmp.exe
-  - PROCESS-NAME,Vibing.exe
-  - PROCESS-NAME,AweSun.exe
-  - PROCESS-NAME,awesun_guard.exe
+  - PROCESS-NAME,com.tencent.mobileqq #QQ
+  - PROCESS-NAME,com.tencent.mm #微信
+  - PROCESS-NAME,com.youdao.dict #网易有道词典
+  - PROCESS-NAME,com.alicloud.databox #网易有道词典
+  - PROCESS-NAME,com.baidu.netdisk #百度网盘
+  - PROCESS-NAME,com.xunlei.downloadprovider #迅雷
+  - PROCESS-NAME,com.oray.sunlogin #向日葵远程控制
+  - PROCESS-NAME,com.eusoft.eudic #欧路词典
+  - PROCESS-NAME,com.githubtvbox.osc.tk #tvbox
+  - PROCESS-NAME,io.legado.app.release #阅读
+  - PROCESS-NAME,com.tencent.tmgp.sgame #王者荣耀
+  - PROCESS-NAME,com.tencent.lolm #英雄联盟手游
+  - PROCESS-NAME,com.tencent.jkchess #金铲铲之战
+  - PROCESS-NAME,com.tencent.tmgp.pubgmhd #和平精英
