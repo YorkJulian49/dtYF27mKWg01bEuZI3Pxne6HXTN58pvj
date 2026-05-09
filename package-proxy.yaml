@@ -1,0 +1,100 @@
+  - PROCESS-NAME,com.google.android.apps.translate #Translate
+  - PROCESS-NAME,xyz.blueskyweb.app #Bluesky
+  - PROCESS-NAME,com.google.android.keep #Keep Notes
+  - PROCESS-NAME,com.google.android.apps.tasks #Tasks
+  - PROCESS-NAME,io.raindrop.raindropio #Raindrop
+  - PROCESS-NAME,com.instagram.android #Instagram
+  - PROCESS-NAME,team.noones.mobilemessenger #NoOnes
+  - PROCESS-NAME,com.tumblr #Tumblr
+  - PROCESS-NAME,com.linkedin.android #LinkedIn
+  - PROCESS-NAME,org.thoughtcrime.securesms #Signal
+  - PROCESS-NAME,io.metamask #MetaMask
+  - PROCESS-NAME,com.locationchanger #Location Changer
+  - PROCESS-NAME,com.google.android.apps.walletnfcrel #Google Wallet
+  - PROCESS-NAME,com.spaceship.screen.textcopy #Instant Translate
+  - PROCESS-NAME,com.google.android.apps.docs.editors.docs #Docs
+  - PROCESS-NAME,com.snapchat.android #Snapchat
+  - PROCESS-NAME,com.twitter.android #X
+  - PROCESS-NAME,com.quora.android #Quora
+  - PROCESS-NAME,air.com.rosettastone.mobile.CoursePlayer #Rosetta Stone
+  - PROCESS-NAME,com.gologin.gologin_mobile #GoLogin
+  - PROCESS-NAME,com.google.android.apps.docs.editors.slides #Slides
+  - PROCESS-NAME,com.github.android #GitHub
+  - PROCESS-NAME,com.instagram.barcelona #Threads
+  - PROCESS-NAME,com.busuu.android.enc #Busuu
+  - PROCESS-NAME,com.binance.dev #Binance
+  - PROCESS-NAME,com.openai.chatgpt #ChatGPT
+  - PROCESS-NAME,com.ebay.mobile #eBay
+  - PROCESS-NAME,com.metrolist.music #Metrolist
+  - PROCESS-NAME,#Discord
+  - PROCESS-NAME,com.discord
+  - PROCESS-NAME,#Reddit
+  - PROCESS-NAME,com.reddit.frontpage
+  - PROCESS-NAME,#OKX
+  - PROCESS-NAME,com.okinc.okex.gp
+  - PROCESS-NAME,#Voice
+  - PROCESS-NAME,com.google.android.apps.googlevoice
+  - PROCESS-NAME,#Programming Hub
+  - PROCESS-NAME,com.freeit.java
+  - PROCESS-NAME,#Mimo
+  - PROCESS-NAME,com.getmimo
+  - PROCESS-NAME,#blind
+  - PROCESS-NAME,com.teamblind.blind
+  - PROCESS-NAME,#Telegram
+  - PROCESS-NAME,org.telegram.messenger
+  - PROCESS-NAME,#Messenger
+  - PROCESS-NAME,com.facebook.orca
+  - PROCESS-NAME,#WhatsApp
+  - PROCESS-NAME,com.whatsapp
+  - PROCESS-NAME,#Kotatsu
+  - PROCESS-NAME,org.koitharu.kotatsu
+  - PROCESS-NAME,#Twitch
+  - PROCESS-NAME,tv.twitch.android.app
+  - PROCESS-NAME,#Mastodon
+  - PROCESS-NAME,org.joinmastodon.android
+  - PROCESS-NAME,#Facebook
+  - PROCESS-NAME,com.facebook.katana
+  - PROCESS-NAME,#Aurora Store
+  - PROCESS-NAME,com.aurora.store
+  - PROCESS-NAME,#Orbita
+  - PROCESS-NAME,org.gologin.orbita
+  - PROCESS-NAME,#Amazon Shopping
+  - PROCESS-NAME,com.amazon.mShop.android.shopping
+  - PROCESS-NAME,#LINE
+  - PROCESS-NAME,jp.naver.line.android
+  - PROCESS-NAME,#Sheets
+  - PROCESS-NAME,com.google.android.apps.docs.editors.sheets
+  - PROCESS-NAME,#Proton Pass
+  - PROCESS-NAME,proton.android.pass
+  - PROCESS-NAME,#Tor Browser
+  - PROCESS-NAME,org.torproject.torbrowser
+  - PROCESS-NAME,#FCM toolbox
+  - PROCESS-NAME,fr.smarquis.fcm
+  - PROCESS-NAME,#Claude
+  - PROCESS-NAME,com.anthropic.claude
+  - PROCESS-NAME,#Maps
+  - PROCESS-NAME,com.google.android.apps.maps
+  - PROCESS-NAME,#YouTube Music
+  - PROCESS-NAME,com.google.android.apps.youtube.music
+  - PROCESS-NAME,#Google Play Store
+  - PROCESS-NAME,com.android.vending
+  - PROCESS-NAME,#Google Play services
+  - PROCESS-NAME,com.google.android.gms
+  - PROCESS-NAME,#Google Play Protect Service
+  - PROCESS-NAME,com.google.android.odad
+  - PROCESS-NAME,#Photos
+  - PROCESS-NAME,com.google.android.apps.photos
+  - PROCESS-NAME,#Google
+  - PROCESS-NAME,com.google.android.googlequicksearchbox
+  - PROCESS-NAME,#Gmail
+  - PROCESS-NAME,com.google.android.gm
+  - PROCESS-NAME,#Drive
+  - PROCESS-NAME,com.google.android.apps.docs
+  - PROCESS-NAME,#Gboard
+  - PROCESS-NAME,com.google.android.inputmethod.latin
+  - PROCESS-NAME,#YouTube
+  - PROCESS-NAME,com.google.android.youtube
+  - PROCESS-NAME,#Pixel Weather
+  - PROCESS-NAME,com.google.android.apps.weather
+  - PROCESS-NAME,#Calendar
+  - PROCESS-NAME,com.google.android.calendar
