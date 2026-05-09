@@ -21,4 +21,32 @@ payload:
   - PROCESS-NAME,com.cfdata #cf-data
   - PROCESS-NAME,com.cfnat.manager #cfnat manager
   - PROCESS-NAME,com.bilingify.readest #readest
-  
+  - PROCESS-NAME,com.tmri.app.main #交管12123
+  - PROCESS-NAME,ctrip.android.view #携程旅行
+  - PROCESS-NAME,com.Qunar #去哪儿旅行
+  - PROCESS-NAME,com.taobao.trip #飞猪旅行
+  - PROCESS-NAME,com.sdu.didi.psnger #滴滴出行
+  - PROCESS-NAME,com.MobileTicket #铁路12306
+  - PROCESS-NAME,com.umetrip.android.msky.app #航旅纵横
+  - PROCESS-NAME,com.baidu.BaiduMap #百度地图
+  - PROCESS-NAME,com.autonavi.minimap #高德地图
+  - PROCESS-NAME,com.MobileTicket #铁路12306
+  - PROCESS-NAME,com.youku.phone #优酷视频
+  - PROCESS-NAME,com.tencent.qqlive #腾讯视频
+  - PROCESS-NAME,tv.pps.mobile #爱奇艺随刻
+  - PROCESS-NAME,tv.danmaku.bili #哔哩哔哩
+  - PROCESS-NAME,air.tv.douyu.android #斗鱼
+  - PROCESS-NAME,com.smile.gifmaker #快手
+  - PROCESS-NAME,com.ss.android.ugc.aweme #抖音
+  - PROCESS-NAME,com.sina.weibo #微博
+  - PROCESS-NAME,com.xingin.xhs #小红书
+  - PROCESS-NAME,com.zhihu.android #知乎
+  - PROCESS-NAME,com.tencent.weread #微信读书
+  - PROCESS-NAME,com.eg.android.AlipayGphone #支付宝
+  - PROCESS-NAME,com.taobao.idlefish #闲鱼
+  - PROCESS-NAME,com.taobao.taobao #淘宝
+  - PROCESS-NAME,com.tmall.wireless #天猫
+  - PROCESS-NAME,com.jingdong.app.mall #京东
+  - PROCESS-NAME,com.xunmeng.pinduoduo #拼多多
+  - PROCESS-NAME,com.sankuai.meituan #美团
+  - PROCESS-NAME,com.sankuai.meituan.takeoutnew #美团外卖
