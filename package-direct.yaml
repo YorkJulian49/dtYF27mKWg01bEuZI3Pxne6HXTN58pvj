@@ -7,7 +7,7 @@ payload:
   - PROCESS-NAME,com.youdao.dict #网易有道词典
   - PROCESS-NAME,com.alicloud.databox #网易有道词典
   - PROCESS-NAME,com.youdao.hindict #U-Dictionary
-
+  - PROCESS-NAME,com.didjdk.adbhelper #甲壳虫ADB助手
   - PROCESS-NAME,com.baidu.netdisk #百度网盘
   - PROCESS-NAME,com.xunlei.downloadprovider #迅雷
   - PROCESS-NAME,com.oray.sunlogin #向日葵远程控制
