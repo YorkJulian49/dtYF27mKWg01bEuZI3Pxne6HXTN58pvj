@@ -24,3 +24,5 @@ DOMAIN,xzy1y.ysepan.com
 DOMAIN,xzy1y.ys168.com
 # 以下是雷电模拟器规则
 DOMAIN,ad.ldplayer.net
+# MT Manager
+DOMAIN-SUFFIX,mt2.cn
