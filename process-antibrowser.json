@@ -3,8 +3,8 @@
   "rules": [
     {
       "process_name": [
-        "proxy-manager-desktop",
-        "multi-local-proxy-open"
+        "proxy-manager-desktop.exe",
+        "multi-local-proxy-open.exe"
       ]
     }
   ]
