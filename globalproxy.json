@@ -3,8 +3,7 @@
   "rules": [
     {
       "domain": [
-        "services.googleapis.cn",
-        "subs.839797.xyz"
+        "services.googleapis.cn"
       ]
     },
     {
