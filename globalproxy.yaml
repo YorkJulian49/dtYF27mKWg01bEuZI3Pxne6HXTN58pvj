@@ -1,6 +1,5 @@
 payload:
   - DOMAIN,services.googleapis.cn
-  - DOMAIN,subs.839797.xyz
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,coinall.ltd
   - DOMAIN-SUFFIX,okx.cab
