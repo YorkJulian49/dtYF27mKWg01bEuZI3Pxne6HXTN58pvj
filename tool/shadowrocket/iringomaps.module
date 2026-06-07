@@ -1,0 +1,35 @@
+#!url=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/tool/shadowrocket/iringomaps.module
+#!name= iRingo: 🗺️ Maps
+#!desc=自定义 Maps app\n添加国际版功能\n自定义服务版本
+#!openUrl=http://boxjs.com/#/app/iRingo.Maps
+#!author=VirgilClyne[https://github.com/VirgilClyne]
+#!homepage=https://NSRingo.github.io/guide/GeoServices/maps
+#!icon=https://developer.apple.com/assets/elements/icons/maps/maps-128x128.png
+#!category= iRingo
+#!date=2025-10-27 07:07:29
+#!version=4.4.0
+#!arguments=[动态配置]资源清单的国家或地区代码:CN,[URL信息集]调度器:AutoNavi,[URL信息集]导航与ETA:AutoNavi,[URL信息集]评分和照片:Apple,[URL信息集]定位漂移:AUTO,[瓦片数据集]地球图像:AUTO,[URL信息集]评分和照片:Apple,[URL信息集]定位漂移:AUTO,[瓦片数据集]道路图像与四处看看:AUTO,[瓦片数据集]卫星图像:HYBRID,[调试]日志等级:WARN
+
+[Rule]
+DOMAIN-SUFFIX,is.autonavi.com,DIRECT
+DOMAIN,gspe11-2-cn-ssl.ls.apple.com,DIRECT
+DOMAIN,gspe12-cn-ssl.ls.apple.com,DIRECT
+DOMAIN,gspe19-cn-ssl.ls.apple.com,DIRECT
+DOMAIN,gspe19-2-cn-ssl.ls.apple.com,DIRECT
+DOMAIN,gspe79-cn-ssl.ls.apple.com,DIRECT
+
+[Script]
+🗺️ Maps.config.defaults.request = type=http-request,script-path=https://github.com/NSRingo/GeoServices/releases/download/v4.4.0/request.bundle.js,pattern=^https?:\/\/configuration\.ls\.apple\.com\/config\/defaults,argument="{"GeoManifest.Dynamic.Config.CountryCode":"{{{[动态配置]资源清单的国家或地区代码}}}","UrlInfoSet.Dispatcher":"{{{[URL信息集]调度器}}}","UrlInfoSet.Directions":"{{{[URL信息集]导航与ETA}}}","UrlInfoSet.RAP":"{{{[URL信息集]评分和照片}}}","UrlInfoSet.LocationShift":"{{{[URL信息集]定位漂移}}}","TileSet.Earth":"{{{[瓦片数据集]地球图像}}}","TileSet.Roads":"{{{[瓦片数据集]道路图像与四处看看}}}","TileSet.Satellite":"{{{[瓦片数据集]卫星图像}}}","LogLevel":"{{{[调试]日志等级}}}"}"
+
+🗺️ Maps.config.defaults.response = type=http-response,script-path=https://github.com/NSRingo/GeoServices/releases/download/v4.4.0/response.bundle.js,pattern=^https?:\/\/configuration\.ls\.apple\.com\/config\/defaults,requires-body=true,argument="{"GeoManifest.Dynamic.Config.CountryCode":"{{{[动态配置]资源清单的国家或地区代码}}}","UrlInfoSet.Dispatcher":"{{{[URL信息集]调度器}}}","UrlInfoSet.Directions":"{{{[URL信息集]导航与ETA}}}","UrlInfoSet.RAP":"{{{[URL信息集]评分和照片}}}","UrlInfoSet.LocationShift":"{{{[URL信息集]定位漂移}}}","TileSet.Earth":"{{{[瓦片数据集]地球图像}}}","TileSet.Roads":"{{{[瓦片数据集]道路图像与四处看看}}}","TileSet.Satellite":"{{{[瓦片数据集]卫星图像}}}","LogLevel":"{{{[调试]日志等级}}}"}"
+
+🗺️ Maps.config.announcements.request = type=http-request,script-path=https://github.com/NSRingo/GeoServices/releases/download/v4.4.0/request.bundle.js,pattern=^https?:\/\/gspe35-ssl\.ls\.apple\.(com|cn)\/config\/announcements,argument="{"GeoManifest.Dynamic.Config.CountryCode":"{{{[动态配置]资源清单的国家或地区代码}}}","UrlInfoSet.Dispatcher":"{{{[URL信息集]调度器}}}","UrlInfoSet.Directions":"{{{[URL信息集]导航与ETA}}}","UrlInfoSet.RAP":"{{{[URL信息集]评分和照片}}}","UrlInfoSet.LocationShift":"{{{[URL信息集]定位漂移}}}","TileSet.Earth":"{{{[瓦片数据集]地球图像}}}","TileSet.Roads":"{{{[瓦片数据集]道路图像与四处看看}}}","TileSet.Satellite":"{{{[瓦片数据集]卫星图像}}}","LogLevel":"{{{[调试]日志等级}}}"}"
+
+🗺️ Maps.config.announcements.response = type=http-response,script-path=https://github.com/NSRingo/GeoServices/releases/download/v4.4.0/response.bundle.js,pattern=^https?:\/\/gspe35-ssl\.ls\.apple\.(com|cn)\/config\/announcements,requires-body=true,binary-mode=true,timeout=20,argument="{"GeoManifest.Dynamic.Config.CountryCode":"{{{[动态配置]资源清单的国家或地区代码}}}","UrlInfoSet.Dispatcher":"{{{[URL信息集]调度器}}}","UrlInfoSet.Directions":"{{{[URL信息集]导航与ETA}}}","UrlInfoSet.RAP":"{{{[URL信息集]评分和照片}}}","UrlInfoSet.LocationShift":"{{{[URL信息集]定位漂移}}}","TileSet.Earth":"{{{[瓦片数据集]地球图像}}}","TileSet.Roads":"{{{[瓦片数据集]道路图像与四处看看}}}","TileSet.Satellite":"{{{[瓦片数据集]卫星图像}}}","LogLevel":"{{{[调试]日志等级}}}"}"
+
+🗺️ Maps.geo_manifest.dynamic.config.request = type=http-request,script-path=https://github.com/NSRingo/GeoServices/releases/download/v4.4.0/request.bundle.js,pattern=^https?:\/\/gspe35-ssl\.ls\.apple\.(com|cn)\/geo_manifest\/dynamic\/config,argument="{"GeoManifest.Dynamic.Config.CountryCode":"{{{[动态配置]资源清单的国家或地区代码}}}","UrlInfoSet.Dispatcher":"{{{[URL信息集]调度器}}}","UrlInfoSet.Directions":"{{{[URL信息集]导航与ETA}}}","UrlInfoSet.RAP":"{{{[URL信息集]评分和照片}}}","UrlInfoSet.LocationShift":"{{{[URL信息集]定位漂移}}}","TileSet.Earth":"{{{[瓦片数据集]地球图像}}}","TileSet.Roads":"{{{[瓦片数据集]道路图像与四处看看}}}","TileSet.Satellite":"{{{[瓦片数据集]卫星图像}}}","LogLevel":"{{{[调试]日志等级}}}"}"
+
+🗺️ Maps.geo_manifest.dynamic.config.response = type=http-response,script-path=https://github.com/NSRingo/GeoServices/releases/download/v4.4.0/response.bundle.js,pattern=^https?:\/\/gspe35-ssl\.ls\.apple\.(com|cn)\/geo_manifest\/dynamic\/config,requires-body=true,binary-mode=true,timeout=20,argument="{"GeoManifest.Dynamic.Config.CountryCode":"{{{[动态配置]资源清单的国家或地区代码}}}","UrlInfoSet.Dispatcher":"{{{[URL信息集]调度器}}}","UrlInfoSet.Directions":"{{{[URL信息集]导航与ETA}}}","UrlInfoSet.RAP":"{{{[URL信息集]评分和照片}}}","UrlInfoSet.LocationShift":"{{{[URL信息集]定位漂移}}}","TileSet.Earth":"{{{[瓦片数据集]地球图像}}}","TileSet.Roads":"{{{[瓦片数据集]道路图像与四处看看}}}","TileSet.Satellite":"{{{[瓦片数据集]卫星图像}}}","LogLevel":"{{{[调试]日志等级}}}"}"
+
+[MITM]
+hostname = %APPEND% configuration.ls.apple.com, gspe35-ssl.ls.apple.com
