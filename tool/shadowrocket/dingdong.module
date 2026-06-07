@@ -1,0 +1,22 @@
+#!url=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/tool/shadowrocket/dingdong.module
+#!name=京东去广告
+#!desc=移除京东开屏广告，精简我的页面产品推广。
+#!author=RuCu6[https://github.com/RuCu6], Maasea[https://github.com/Maasea]
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/JD.png
+#!openUrl=https://apps.apple.com/app/id414245413
+#!tag=去广告
+#!loon_version=3.2.4(787)
+#!homepage=https://hub.kelee.one
+#!date=2025-05-13 15:17:08
+
+[Rule]
+URL-REGEX,"^http:\/\/\w{32}\.jddebug\.com\/diagnose\?",REJECT
+
+[URL Rewrite]
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) - reject-dict
+
+[Script]
+移除京东广告 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/JD/JD_remove_ads.js,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome),requires-body=true
+
+[MITM]
+hostname = %APPEND% api.m.jd.com

@@ -1,0 +1,49 @@
+#!url=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/tool/shadowrocket/xhs.module
+#!name=小红书去广告
+#!desc=过滤信息流推广，移除图片及视频水印，如有异常，请先清除缓存再尝试。
+#!author=RuCu6[https://github.com/RuCu6], fmz200[https://github.com/fmz200]
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RedPaper.png
+#!openUrl=https://apps.apple.com/app/id741292507
+#!tag=去广告
+#!loon_version=3.2.4(787)
+#!homepage=https://hub.kelee.one
+#!date=2025-12-20 02:25:08
+
+[Rule]
+#AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
+AND,((AND,((PROTOCOL,UDP),(DST-PORT,443))),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
+
+[URL Rewrite]
+^https:\/\/ci\.xiaohongshu\.com\/system_config\/watermark - reject-img
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(?:get_style|open|submit_action) - reject-dict
+^https:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? - reject-dict
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v2\/guide\/user_banner|v3\/note\/guide) - reject-dict
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/(?:v1\/ads\/resource|v2\/hey\/\w+\/hey_gallery) - reject-dict
+
+[Script]
+移除图片和实况照片水印 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/(?:imagefeed|live_photo\/save),requires-body=true
+
+移除整体配置 ui = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system\/service\/ui\/config\?,requires-body=true
+
+移除开屏广告 config = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\?,requires-body=true
+
+移除开屏广告 splash_config = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config,requires-body=true
+
+移除详情页小部件、关注页感兴趣的人 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/(?:note\/widgets|user\/followings\/followfeed),requires-body=true
+
+移除信息流广告 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/followfeed\?,requires-body=true
+
+移除详情页感兴趣的人 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v5\/recommend\/user\/follow_recommend\?,requires-body=true
+
+移除评论区实况照片水印 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v1\/interaction\/comment\/video\/download|v5\/note\/comment\/list),requires-body=true
+
+移除图片和视频水印 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(?:v2\/note\/feed|v3\/note\/videofeed),requires-body=true
+
+移除信息流广告 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/(?:edith|rec)\.xiaohongshu\.com\/api\/sns\/v6\/homefeed\?,requires-body=true
+
+移除搜索页广告 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/(?:edith|so)\.xiaohongshu\.com\/api\/sns\/v10\/search\/notes\?,requires-body=true
+
+移除视频水印 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/RedPaper/RedPaper_remove_ads.js,pattern=^https:\/\/(?:edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(?:v4\/note\/videofeed|v10\/note\/video\/save),requires-body=true
+
+[MITM]
+hostname = %APPEND% ci.xiaohongshu.com, edith.xiaohongshu.com, rec.xiaohongshu.com, so.xiaohongshu.com, www.xiaohongshu.com
