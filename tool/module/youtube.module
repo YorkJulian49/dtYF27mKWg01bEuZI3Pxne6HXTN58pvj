@@ -10,7 +10,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://hub.kelee.one
 #!date=2026-06-01 17:11:35
-#!arguments=屏蔽上传按钮:false,屏蔽Shorts按钮:false,屏蔽选段按钮:false,字幕翻译语言:off,歌词翻译语言:off,启用调试模式:false
+#!arguments=屏蔽上传按钮:false,屏蔽Shorts按钮:false,屏蔽选段按钮:false,字幕翻译语言:"off",歌词翻译语言:"off",启用调试模式:false
 
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com),(AND,((PROTOCOL,UDP),(DST-PORT,443)))),REJECT
