@@ -1,0 +1,27 @@
+#!url=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/tool/module/iringolocation.module
+#!name= iRingo: 📍 LocationService
+#!desc=自定义定位服务内容\n添加国际版功能\n自定义服务版本
+#!openUrl=http://boxjs.com/#/app/iRingo.LocationService
+#!author=VirgilClyne[https://github.com/VirgilClyne]
+#!homepage=https://NSRingo.github.io/guide/GeoServices/location-service
+#!icon=https://images.macrumors.com/article-new/2019/07/ios_location_services-250x250.jpg
+#!category= iRingo
+#!date=2025-10-24 08:48:41
+#!version=1.0.1
+#!arguments=[地区检测]地理国家或地区代码:US,[调度器]融合数据:true,[调试]日志等级:WARN
+
+
+[Rule]
+DOMAIN,gspe1-ssl.ls.apple.com,DIRECT
+DOMAIN,dispatcher.is.autonavi.com,DIRECT
+
+[Script]
+📍 LocationService.pep.gcc.response = type=http-response,script-path=https://github.com/NSRingo/LocationService/releases/download/v1.0.1/response.bundle.js,pattern=^https?:\/\/gspe1-ssl\.ls\.apple\.com\/pep\/gcc,requires-body=true,timeout=20,argument="{"GeoCountryCode":"{{{[地区检测]地理国家或地区代码}}}","Dispatcher.Hybrid":{{{[调度器]融合数据}}},"LogLevel":"{{{[调试]日志等级}}}"}"
+
+📍 LocationService.Dispatcher.request = type=http-request,script-path=https://github.com/NSRingo/LocationService/releases/download/v1.0.1/request.bundle.js,pattern=^https?:\/\/dispatcher\.is\.autonavi\.com\/dispatcher,requires-body=true,binary-mode=true,timeout=20,argument="{"GeoCountryCode":"{{{[地区检测]地理国家或地区代码}}}","Dispatcher.Hybrid":{{{[调度器]融合数据}}},"LogLevel":"{{{[调试]日志等级}}}"}"
+
+📍 LocationService.Dispatcher.response = type=http-response,script-path=https://github.com/NSRingo/LocationService/releases/download/v1.0.1/response.bundle.js,pattern=^https?:\/\/dispatcher\.is\.autonavi\.com\/dispatcher,requires-body=true,binary-mode=true,timeout=20,argument="{"GeoCountryCode":"{{{[地区检测]地理国家或地区代码}}}","Dispatcher.Hybrid":{{{[调度器]融合数据}}},"LogLevel":"{{{[调试]日志等级}}}"}"
+
+[MITM]
+hostname = %APPEND% gspe1-ssl.ls.apple.com, dispatcher.is.autonavi.com
+

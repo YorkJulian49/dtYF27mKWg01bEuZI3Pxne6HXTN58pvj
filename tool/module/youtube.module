@@ -1,0 +1,26 @@
+#!url=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/tool/module/youtube.module
+#!name=YouTube去广告
+#!desc=移除YouTube视频、瀑布流、搜索和Shorts中的广告，移除底栏的Shorts按钮和上传按钮，增加画中画及字幕翻译功能。移除YouTube Music底栏的上传、选段和升级按钮，增加歌词翻译，支持二者的后台播放。此插件需要启用MitM over HTTP/2和QUIC回退保护。支持Premium订阅用户使用，不支持tvOS设备。
+#!author=Maasea[https://github.com/Maasea], VirgilClyne[https://github.com/VirgilClyne], Choler[https://github.com/Choler], DivineEngine[https://github.com/DivineEngine], app2smile[https://github.com/app2smile]
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouTube.png
+#!openUrl=https://apps.apple.com/app/id544007664
+#!tag=去广告
+#!system=iOS, iPadOS, macOS
+#!system_version=15
+#!loon_version=3.4.0(962)
+#!homepage=https://hub.kelee.one
+#!date=2026-06-01 17:11:35
+#!arguments=屏蔽上传按钮:false,屏蔽Shorts按钮:false,屏蔽选段按钮:false,字幕翻译语言:off,歌词翻译语言:off,启用调试模式:false
+
+[Rule]
+AND,((DOMAIN-SUFFIX,googlevideo.com),(AND,((PROTOCOL,UDP),(DST-PORT,443)))),REJECT
+AND,((DOMAIN-SUFFIX,youtubei.googleapis.com),(AND,((PROTOCOL,UDP),(DST-PORT,443)))),REJECT
+
+[URL Rewrite]
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-200
+
+[Script]
+YouTube去广告 = type=http-response,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,max-size=0,requires-body=true,binary-mode=true,timeout=20,argument="{"blockUpload":{{{屏蔽上传按钮}}},"blockImmersive":{{{屏蔽选段按钮}}},"blockShorts":{{{屏蔽Shorts按钮}}},"captionLang":"{{{字幕翻译语言}}}","lyricLang":"{{{歌词翻译语言}}}","debug":{{{启用调试模式}}}}"
+
+[MITM]
+hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com

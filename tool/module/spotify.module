@@ -1,0 +1,26 @@
+#!url=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/tool/module/spotify.module
+#!name=Spotify去广告
+#!desc=移除播放广告，恢复歌手和专辑列表的正常展示。修改插件自定义配置项需要重新登陆方可生效。
+#!author=001ProMax[https://github.com/001ProMax]
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Spotify.png
+#!openUrl=https://apps.apple.com/app/id324684580
+#!tag=去广告
+#!loon_version=3.2.4(787)
+#!homepage=https://hub.kelee.one
+#!date=2025-08-10 15:30:17
+#!arguments=移除底栏创建按钮:true,启动Apple设备接力:true
+
+[Rule]
+#AND,((DOMAIN-SUFFIX,spotify.com),(PROTOCOL,QUIC)),REJECT
+AND,((DOMAIN-SUFFIX,spotify.com),(AND,((PROTOCOL,UDP),(DST-PORT,443)))),REJECT
+
+[URL Rewrite]
+^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/pendragon\/ - reject-dict
+^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/artistview\/v1\/artist\/(.*)&platform=iphone https://spclient.wg.spotify.com/artistview/v1/artist/$1&platform=ipad header
+
+[Script]
+Protobuf处理 = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/Spotify/Spotify_remove_ads.js,pattern=^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/(?:bootstrap|user-customization-service),requires-body=true,binary-body-mode=true,timeout=5,argument="{"tab":{{{移除底栏创建按钮}}},"useractivity":{{{启动Apple设备接力}}}}"
+
+
+[MITM]
+hostname = %APPEND% *-spclient.spotify.com, spclient.wg.spotify.com
