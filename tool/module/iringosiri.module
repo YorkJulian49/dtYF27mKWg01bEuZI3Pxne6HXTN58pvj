@@ -8,7 +8,7 @@
 #!category= iRingo
 #!date=2024-12-24 04:25:06
 #!version=4.2.7
-#!arguments=国家和地区代码:US,Siri区域:zh_CN,区域:OFF,Siri响应语言修改:zh_CN,[调试]日志等级:WARN
+#!arguments=国家和地区代码:"US",Siri区域:"zh_CN",区域:"OFF",Siri响应语言修改:"zh_CN",[调试]日志等级:"WARN"
 
 [Script]
 ⭕ Siri.Search.request = type=http-request,script-path=https://github.com/NSRingo/Siri/releases/download/v4.2.7/request.bundle.js,pattern=^https?:\/\/(api-siri|api2|api-.+)\.smoot\.apple\.com\/search,argument="{"CountryCode":"{{{国家和地区代码}}}","SiriLocale":"{{{Siri区域}}}","Region":"{{{区域}}}","SiriResponseLanguageVariant":"{{{Siri响应语言修改}}}","LogLevel":"{{{[调试]日志等级}}}"}"
