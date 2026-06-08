@@ -1,5 +1,4 @@
 #!url=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/tool/module/awesun.module
-#!url=http://script.hub/file/_start_/https://kelee.one/Tool/Loon/Lpx/OraySunlogin_remove_ads.lpx/_end_/OraySunlogin_remove_ads.sgmodule?type=loon-plugin&target=shadowrocket-module&del=true&jqEnabled=true
 #!name=向日葵去广告
 #!desc=移除开屏广告、广告横幅。
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
@@ -15,4 +14,3 @@
 
 [MITM]
 hostname = %APPEND% client-api-v2.oray.com
-
