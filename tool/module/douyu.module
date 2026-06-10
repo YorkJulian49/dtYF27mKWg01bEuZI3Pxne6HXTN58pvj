@@ -11,9 +11,7 @@
 
 [Rule]
 URL-REGEX,"^http:\/\/linkmicschedule\.douyucdn\.cn\/im_schedule\/im_gate_list",REJECT
-#AND,((DEST-PORT,18000),(PROTOCOL,STUN)),REJECT
-AND,((DEST-PORT,18000),(AND,((PROTOCOL,UDP),(OR,((DST-PORT,3478),(DST-PORT,3479),(DST-PORT,19302),(DST-PORT,19305))))
-)),REJECT
+AND,((DEST-PORT,18000),(PROTOCOL,STUN)),REJECT
 DOMAIN,stun1.douyucdn.cn,REJECT
 DOMAIN,stun1.qvb.qcloud.com,REJECT
 
