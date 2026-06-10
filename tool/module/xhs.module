@@ -10,8 +10,7 @@
 #!date=2025-12-20 02:25:08
 
 [Rule]
-#AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
-AND,((AND,((PROTOCOL,UDP),(DST-PORT,443))),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
+AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
 
 [URL Rewrite]
 ^https:\/\/ci\.xiaohongshu\.com\/system_config\/watermark - reject-img
