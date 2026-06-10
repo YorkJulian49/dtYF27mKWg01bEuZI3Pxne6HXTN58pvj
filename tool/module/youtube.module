@@ -20,7 +20,7 @@ AND,((DOMAIN-SUFFIX,youtubei.googleapis.com),(AND,((PROTOCOL,UDP),(DST-PORT,443)
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-200
 
 [Script]
-YouTube去广告 = type=http-response,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=true,binary-mode=true,timeout=20,argument="{"blockUpload":{{{屏蔽上传按钮}}},"blockImmersive":{{{屏蔽选段按钮}}},"blockShorts":{{{屏蔽Shorts按钮}}},"captionLang":"{{{字幕翻译语言}}}","lyricLang":"{{{歌词翻译语言}}}","debug":{{{启用调试模式}}}}"
+YouTube去广告 = type=http-response,script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,requires-body=true,binary-mode=true,timeout=20,max-size=0,argument="{"blockUpload":{{{屏蔽上传按钮}}},"blockImmersive":{{{屏蔽选段按钮}}},"blockShorts":{{{屏蔽Shorts按钮}}},"captionLang":"{{{字幕翻译语言}}}","lyricLang":"{{{歌词翻译语言}}}","debug":{{{启用调试模式}}}}"
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
