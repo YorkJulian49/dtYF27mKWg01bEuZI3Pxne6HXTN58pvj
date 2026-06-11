@@ -8,7 +8,7 @@
 #!category= iRingo
 #!date=2024-12-24 04:25:10
 #!version=4.2.7
-#!arguments=国家和地区代码:"SG",搜索领域:"web,itunes,app_store,movies,restaurants,maps",功能:"flightutilities,lookup,mail,messages,news,safari,siri,spotlight,visualintelligence",Safari智能历史记录:true,[调试]日志等级:"WARN"
+#!arguments=国家和地区代码:"US",搜索领域:"web,itunes,app_store,movies,restaurants,maps",功能:"flightutilities,lookup,mail,messages,news,safari,siri,spotlight,visualintelligence",Safari智能历史记录:true,[调试]日志等级:"WARN"
 
 [Script]
 🔍 Search.Bag.request = type=http-request,script-path=https://github.com/NSRingo/Siri/releases/download/v4.2.7/request.bundle.js,pattern=^https?:\/\/api2?\.smoot\.apple\.(com|cn)\/bag,argument="{"CountryCode":"{{{国家和地区代码}}}","Domains":"{{{搜索领域}}}","Functions":"{{{功能}}}","SafariSmartHistory":{{{Safari智能历史记录}}},"LogLevel":"{{{[调试]日志等级}}}"}"
