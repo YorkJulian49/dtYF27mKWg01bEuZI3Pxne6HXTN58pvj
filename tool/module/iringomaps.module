@@ -8,7 +8,7 @@
 #!category= iRingo
 #!date=2025-10-27 07:07:29
 #!version=4.4.0
-#!arguments=[动态配置]资源清单的国家或地区代码:"CN",[URL信息集]调度器:"AutoNavi",[URL信息集]导航与ETA:"AutoNavi",[URL信息集]评分和照片:"Apple",[URL信息集]定位漂移:"AUTO",[瓦片数据集]地球图像:"AUTO",[URL信息集]评分和照片:"Apple",[URL信息集]定位漂移:"AUTO",[瓦片数据集]道路图像与四处看看:"AUTO",[瓦片数据集]卫星图像:"HYBRID",[调试]日志等级:"WARN"
+#!arguments=[动态配置]资源清单的国家或地区代码:"AUTO",[URL信息集]调度器:"AutoNavi",[URL信息集]导航与ETA:"AutoNavi",[URL信息集]评分和照片:"Apple",[URL信息集]定位漂移:"AUTO",[瓦片数据集]地球图像:"AUTO",[URL信息集]评分和照片:"Apple",[URL信息集]定位漂移:"AUTO",[瓦片数据集]道路图像与四处看看:"AUTO",[瓦片数据集]卫星图像:"HYBRID",[调试]日志等级:"WARN"
 
 [Rule]
 DOMAIN-SUFFIX,is.autonavi.com,DIRECT
