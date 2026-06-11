@@ -8,7 +8,7 @@
 #!category=🍿️ DualSubs
 #!date=2025-10-25 04:40:57
 #!version=1.9.12
-#!arguments=[歌词]启用类型(多选):"Translate,External",[翻译器]主语言(源语言):"AUTO",[翻译器]副语言(目标语言):"ZH",[翻译器]服务商API:"Google",[歌词]服务商API:"NeteaseMusic",[调试]日志等级:"WARN"
+#!arguments=[歌词]启用类型(多选):"Translate,External",[翻译器]主语言(源语言):"AUTO",[翻译器]副语言(目标语言):"ZH-HANS",[翻译器]服务商API:"Google",[歌词]服务商API:"QQMusic",[调试]日志等级:"WARN"
 
 [Script]
 🍿️ DualSubs.Spotify.Tracks.response.json = type=http-response,script-path=https://github.com/DualSubs/Spotify/releases/download/v1.9.12/response.bundle.js,pattern=^https?:\/\/api\.spotify\.com\/v1\/tracks\?,argument="{"Types":"{{{[歌词]启用类型(多选)}}}","Languages[0]":"{{{[翻译器]主语言(源语言)}}}","Languages[1]":"{{{[翻译器]副语言(目标语言)}}}","Vendor":"{{{[翻译器]服务商API}}}","LrcVendor":"{{{[歌词]服务商API}}}","LogLevel":"{{{[调试]日志等级}}}"}"
