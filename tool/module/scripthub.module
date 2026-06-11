@@ -7,6 +7,9 @@
 [General]
 force-http-engine-hosts = %APPEND% script.hub, *.script.hub
 
+[Rule]
+DOMAIN,scripthub.vercel.app,DIRECT
+
 [Script]
 Script Hub: 前端 = type=http-request,script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.js,pattern=^https?:\/\/script\.hub\/($|edit\/|reload),timeout=300
 
