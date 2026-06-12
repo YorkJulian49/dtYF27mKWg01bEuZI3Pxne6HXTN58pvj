@@ -13,8 +13,10 @@
 #!arguments=屏蔽上传按钮:false,屏蔽Shorts按钮:false,屏蔽选段按钮:false,字幕翻译语言:"zh-Hans",歌词翻译语言:"zh-Hans",启用调试模式:false
 
 [Rule]
-AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,QUIC)),REJECT
-AND,((DOMAIN-SUFFIX,youtubei.googleapis.com),(PROTOCOL,QUIC)),REJECT
+#AND,((DOMAIN-SUFFIX,googlevideo.com),(PROTOCOL,QUIC)),REJECT
+#AND,((DOMAIN-SUFFIX,youtubei.googleapis.com),(PROTOCOL,QUIC)),REJECT
+AND,((DOMAIN-SUFFIX,googlevideo.com),(AND,((NETWORK,UDP),(DST-PORT,443)))),REJECT
+AND,((DOMAIN-SUFFIX,youtubei.googleapis.com),(AND,((NETWORK,UDP),(DST-PORT,443)))),REJECT
 
 [URL Rewrite]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - REJECT-200
