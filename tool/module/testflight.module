@@ -11,7 +11,7 @@
 #!arguments=捕获账号令牌:false,自动加入TF:false,监控TF位置:true,加入TF定时参数:"0 0/2 * * * ?",监控TF定时参数:"0 * * * * ?"
 
 [Rule]
-DOMAIN,testflight.apple.com,PROXY
+DOMAIN,testflight.apple.com,DIRECT
 
 [Script]
 获取账号令牌 = type=http-request,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/TestFlight/CaptureAccountToken.js,pattern=^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$,argument="{"CaptureAccountToken":{{{捕获账号令牌}}}}"
