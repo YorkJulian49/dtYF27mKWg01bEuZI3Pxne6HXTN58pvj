@@ -12,7 +12,7 @@
 
 [Rule]
 #AND,((DOMAIN-SUFFIX,spotify.com),(PROTOCOL,QUIC)),REJECT
-AND,((DOMAIN-SUFFIX,spotify.com),(AND,(PROTOCOL,QUIC)),REJECT
+AND,((DOMAIN-SUFFIX,spotify.com),(AND,((NETWORK,UDP),(DST-PORT,443))),REJECT
 
 [URL Rewrite]
 ^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/pendragon\/ - reject-dict
