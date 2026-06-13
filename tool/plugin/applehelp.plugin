@@ -1,0 +1,24 @@
+#!name=🆃🅾🅿🅼🅾🅳 苹果助手
+#!desc=苹果服务器切换模块，编辑参数以修改
+#!arguments=商店下载加速:iosapps, 商店加速地址:iosapps.itunes.apple.com.download.ks-cdn.com, 系统升级加速:updates, 升级加速地址:updates.cdn-apple.com.download.ks-cdn.com
+#!arguments-desc=🔘 商店下载加速填#可禁用，加速地址可选填其他\n\n· 默认金山CDN，CDN结果为本省\n\n   iosapps.itunes.apple.com.download.ks-cdn.com\n\n· 备选网宿CDN，CDN结果为本省或临近省份\n\n   hls.itunes.apple.com.mwcname.com\n\n· 备选阿里CDN，CDN结果可能异地\n\n   iosapps.itunes.apple.com.m.alikunlun.net\n\n🔘 系统升级加速填#可禁用，加速地址可选填其他\n\n· 默认金山CDN，CDN结果为本省\n\n   updates.cdn-apple.com.download.ks-cdn.com\n\n· 备选网宿CDN，CDN结果为本省或临近省份\n\n   updates.cdn-apple.com.mwcname.com\n\n· 备选阿里CDN，CDN结果可能异地\n\n   updates.cdn-apple.com.w.kunlunca.com
+# 整理作者：https://github.com/LOWERTOP
+# 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
+
+[Argument]
+storedownload=select,"iosapps",tag=[商店下载加速],desc=iosapps
+downloadaccelerate=select,"iosapps.itunes.apple.com.download.ks-cdn.com","hls.itunes.apple.com.mwcname.com","iosapps.itunes.apple.com.m.alikunlun.net","#",tag=[商店加速地址],desc=🔘 商店下载加速填#可禁用，加速地址可选填其他\n\n· 默认金山CDN，CDN结果为本省\n\n   iosapps.itunes.apple.com.download.ks-cdn.com\n\n· 备选网宿CDN，CDN结果为本省或临近省份\n\n   hls.itunes.apple.com.mwcname.com\n\n· 备选阿里CDN，CDN结果可能异地\n\n   iosapps.itunes.apple.com.m.alikunlun.net\n\n
+systemupgrade=select,"updates",tag=[系统升级加速],desc=updates
+upgradeaccelerate=select,"updates.cdn-apple.com.download.ks-cdn.com","updates.cdn-apple.com.mwcname.com","updates.cdn-apple.com.w.kunlunca.com","#",tag=[升级加速地址],desc=🔘 系统升级加速填#可禁用，加速地址可选填其他\n\n· 默认金山CDN，CDN结果为本省\n\n   updates.cdn-apple.com.download.ks-cdn.com\n\n· 备选网宿CDN，CDN结果为本省或临近省份\n\n   updates.cdn-apple.com.mwcname.com\n\n· 备选阿里CDN，CDN结果可能异地\n\n   updates.cdn-apple.com.w.kunlunca.com
+
+
+[Rule]
+# 加速需要直连
+DOMAIN-SUFFIX,apps.apple.com,PROXY
+DOMAIN-SUFFIX,itunes.apple.com,PROXY
+
+[Host]
+"{storedownload}".itunes.apple.com = "{downloadaccelerate}"
+"{systemupgrade}".cdn-apple.com = "{upgradeaccelerate}"
+"{systemupgrade}".cdn-apple.com.akadns.net = "{upgradeaccelerate}"
+"{systemupgrade}".g.aaplimg.com = "{upgradeaccelerate}"
