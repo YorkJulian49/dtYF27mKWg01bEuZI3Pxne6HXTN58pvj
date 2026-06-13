@@ -12,35 +12,35 @@ HK-Call = url-test,url=http://www.gstatic.com/generate_204,interval=600,toleranc
 
 [Rule]
 # 苹果地区检测
-DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,"{"Proxy Group":"{默认代理分组}"}"
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,HK-Call
 
 # 通话端口代理
-AND,((GEOIP,HK),(AND,((PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500),(DEST-PORT,16384–16403)))))),"{"Proxy Group":"{默认代理分组}"}"
+AND,((GEOIP,HK),(AND,((PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500),(DEST-PORT,16384–16403)))))),HK-Call
 
 # CSL(ClubSim)
-DOMAIN,csl.prod.ondemandconnectivity.com,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,hhk.prod.ondemandconnectivity.com,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
+DOMAIN,csl.prod.ondemandconnectivity.com,HK-Call
+DOMAIN,hhk.prod.ondemandconnectivity.com,HK-Call
+DOMAIN,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org,HK-Call
+DOMAIN,ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org,HK-Call
+DOMAIN,ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org,HK-Call
 
 # CMHK
-IP-CIDR,182.239.86.0/24,"{"Proxy Group":"{默认代理分组}"}",no-resolve
-IP-CIDR,182.239.118.0/24,"{"Proxy Group":"{默认代理分组}"}",no-resolve
-IP-CIDR,203.142.127.0/24,"{"Proxy Group":"{默认代理分组}"}",no-resolve
-DOMAIN-SUFFIX,hk.chinamobile.com,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,h3a.prod.ondemandconnectivity.com,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,epdg.epc.mnc012.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,xcap.ims.mnc012.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,bsf.mnc012.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
+IP-CIDR,182.239.86.0/24,HK-Call,no-resolve
+IP-CIDR,182.239.118.0/24,HK-Call,no-resolve
+IP-CIDR,203.142.127.0/24,HK-Call,no-resolve
+DOMAIN-SUFFIX,hk.chinamobile.com,HK-Call
+DOMAIN,h3a.prod.ondemandconnectivity.com,HK-Call
+DOMAIN,epdg.epc.mnc012.mcc454.pub.3gppnetwork.org,HK-Call
+DOMAIN,xcap.ims.mnc012.mcc454.pub.3gppnetwork.org,HK-Call
+DOMAIN,bsf.mnc012.mcc454.pub.3gppnetwork.org,HK-Call
 
 # 3 HK
-IP-CIDR,4.209.41.157/32,"{"Proxy Group":"{默认代理分组}"}",no-resolve
-IP-CIDR,124.217.186.0/24,"{"Proxy Group":"{默认代理分组}"}",no-resolve
-IP-CIDR,203.145.92.0/24,"{"Proxy Group":"{默认代理分组}"}",no-resolve
-DOMAIN-SUFFIX,three.com.hk,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN,hhk.prod.ondemandconnectivity.com,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN-SUFFIX,mnc003.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN-SUFFIX,mnc004.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN-SUFFIX,mnc005.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
-DOMAIN-SUFFIX,mnc014.mcc454.pub.3gppnetwork.org,"{"Proxy Group":"{默认代理分组}"}"
+IP-CIDR,4.209.41.157/32,HK-Call,no-resolve
+IP-CIDR,124.217.186.0/24,HK-Call,no-resolve
+IP-CIDR,203.145.92.0/24,HK-Call,no-resolve
+DOMAIN-SUFFIX,three.com.hk,HK-Call
+DOMAIN,hhk.prod.ondemandconnectivity.com,HK-Call
+DOMAIN-SUFFIX,mnc003.mcc454.pub.3gppnetwork.org,HK-Call
+DOMAIN-SUFFIX,mnc004.mcc454.pub.3gppnetwork.org,HK-Call
+DOMAIN-SUFFIX,mnc005.mcc454.pub.3gppnetwork.org,HK-Call
+DOMAIN-SUFFIX,mnc014.mcc454.pub.3gppnetwork.org,HK-Call
