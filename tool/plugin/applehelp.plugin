@@ -5,18 +5,13 @@
 # 整理作者：https://github.com/LOWERTOP
 # 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
 
-[Argument]
-downloadaccelerate=select,"iosapps.itunes.apple.com.download.ks-cdn.com","hls.itunes.apple.com.mwcname.com","iosapps.itunes.apple.com.m.alikunlun.net","#",tag=[商店加速地址],desc=🔘 商店下载加速填#可禁用，加速地址可选填其他\n\n· 默认金山CDN，CDN结果为本省\n\n   iosapps.itunes.apple.com.download.ks-cdn.com\n\n· 备选网宿CDN，CDN结果为本省或临近省份\n\n   hls.itunes.apple.com.mwcname.com\n\n· 备选阿里CDN，CDN结果可能异地\n\n   iosapps.itunes.apple.com.m.alikunlun.net\n\n
-upgradeaccelerate=select,"updates.cdn-apple.com.download.ks-cdn.com","updates.cdn-apple.com.mwcname.com","updates.cdn-apple.com.w.kunlunca.com","#",tag=[升级加速地址],desc=🔘 系统升级加速填#可禁用，加速地址可选填其他\n\n· 默认金山CDN，CDN结果为本省\n\n   updates.cdn-apple.com.download.ks-cdn.com\n\n· 备选网宿CDN，CDN结果为本省或临近省份\n\n   updates.cdn-apple.com.mwcname.com\n\n· 备选阿里CDN，CDN结果可能异地\n\n   updates.cdn-apple.com.w.kunlunca.com
-
-
 [Rule]
 # 加速需要直连
-DOMAIN-SUFFIX,apps.apple.com,PROXY
-DOMAIN-SUFFIX,itunes.apple.com,PROXY
+DOMAIN-SUFFIX,apps.apple.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
 
 [Host]
-iosapps.itunes.apple.com = "{downloadaccelerate}"
-updates.cdn-apple.com = "{upgradeaccelerate}"
-updates.cdn-apple.com.akadns.net = "{upgradeaccelerate}"
-updates.g.aaplimg.com = "{upgradeaccelerate}"
+iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
+updates.cdn-apple.com = updates.cdn-apple.com.download.ks-cdn.com
+updates.cdn-apple.com.akadns.net = updates.cdn-apple.com.download.ks-cdn.com
+updates.g.aaplimg.com = updates.cdn-apple.com.download.ks-cdn.com
