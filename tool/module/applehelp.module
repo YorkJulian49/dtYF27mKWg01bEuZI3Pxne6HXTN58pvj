@@ -5,9 +5,6 @@
 # 整理作者：https://github.com/LOWERTOP
 # 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
 
-[arguments]
-"{"downloadaccelerate":"{{{商店加速地址}}}","upgradeaccelerate":"{{{升级加速地址}}}"}",
-
 [Rule]
 # 加速需要直连
 DOMAIN-SUFFIX,apps.apple.com,DIRECT
