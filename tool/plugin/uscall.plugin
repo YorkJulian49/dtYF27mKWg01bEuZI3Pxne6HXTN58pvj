@@ -5,35 +5,27 @@
 # 整理作者：https://github.com/LOWERTOP
 # 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
 
-[Argument]
-proxygroup=select,"US-Call","PROXY",tag=默认代理分组,desc=·默认代理分组：默认使用模块内置的名为“US-Call”的代理分组进行代理，可填入自定义的代理分组或节点名称
-callport=select,"#","AND",tag=通话端口代理,desc=·通话端口代理：模块默认代理了Wi-Fi通话常用的500和4500的UDP端口，填入#号可以禁用相关端口的代理
-regionaldetection=select,"#","DOMAIN-SUFFIX",tag=苹果地区检测,desc=·苹果地区检测：模块默认代理了苹果的地区检测URL地址，填入#号可以恢复为默认规则
-
-[Proxy Group]
-US-Call = url-test,url=http://www.gstatic.com/generate_204,interval=600,tolerance=0,timeout=5,select=0,policy-regex-filter=🇺🇸|US|USA|America|america|United States|us|美国|凤凰城|洛杉矶|西雅图|芝加哥|纽约|沪美|美
-
 [Rule]
 # 苹果地区检测
-"{regionaldetection}",gspe1-ssl.ls.apple.com,"{proxygroup}"
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,PROXY
 
 # 通话端口代理
-"{callport}",((GEOIP,US),(AND,((PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500)))))),"{proxygroup}"
+AND,((GEOIP,US),(AND,((PROTOCOL,UDP),(OR,((DEST-PORT,500),(DEST-PORT,4500)))))),PROXY
 
-DOMAIN-SUFFIX,crl.t-mobile.com,"{proxygroup}"
-DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org,"{proxygroup}"
-DOMAIN-SUFFIX,eas3.msg.t-mobile.com,"{proxygroup}"
-DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org,"{proxygroup}"
-DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,"{proxygroup}"
-DOMAIN-SUFFIX,mascns.t-mobile.com,"{proxygroup}"
-DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com,"{proxygroup}"
-DOMAIN-SUFFIX,optimizely.com,"{proxygroup}"
-DOMAIN-SUFFIX,redirect.ultra.me,"{proxygroup}"
-DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org,"{proxygroup}"
-DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,"{proxygroup}"
-DOMAIN-SUFFIX,ultramobile.com,"{proxygroup}"
-DOMAIN-KEYWORD,t-mobile,"{proxygroup}"
-DOMAIN-KEYWORD,ultramobile,"{proxygroup}"
-IP-CIDR,206.29.177.36/32,"{proxygroup}",no-resolve
-IP-CIDR,208.54.0.0/16,"{proxygroup}",no-resolve
-IP-CIDR,66.94.0.0/19,"{proxygroup}",no-resolve
+DOMAIN-SUFFIX,crl.t-mobile.com,PROXY
+DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org,PROXY
+DOMAIN-SUFFIX,eas3.msg.t-mobile.com,PROXY
+DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org,PROXY
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,PROXY
+DOMAIN-SUFFIX,mascns.t-mobile.com,PROXY
+DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com,PROXY
+DOMAIN-SUFFIX,optimizely.com,PROXY
+DOMAIN-SUFFIX,redirect.ultra.me,PROXY
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org,PROXY
+DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org,PROXY
+DOMAIN-SUFFIX,ultramobile.com,PROXY
+DOMAIN-KEYWORD,t-mobile,PROXY
+DOMAIN-KEYWORD,ultramobile,PROXY
+IP-CIDR,206.29.177.36/32,PROXY,no-resolve
+IP-CIDR,208.54.0.0/16,PROXY,no-resolve
+IP-CIDR,66.94.0.0/19,PROXY,no-resolve
