@@ -17,7 +17,7 @@ delete headers.Host
 
 if (!url.startsWith(githubPrefix)) {
     $done({});
-    return;
+     //return;
 }
 
 if (changeTo == "") {
@@ -26,9 +26,11 @@ if (changeTo == "") {
 } else if (changeTo == "B镜像") {
     headers["host"] = "hub.incept.pw"
     url = url.replace(githubPrefix,hubinceptPrefix)
-} else if (changeTo == "C镜像") {
+} 
+/*else if (changeTo == "C镜像") {
     headers["host"] = "raw.kkgithub.com"
     url = url.replace(githubPrefix,kkgithubPrefix)
 }
+*/
 
 $done({url:url,headers:headers})
