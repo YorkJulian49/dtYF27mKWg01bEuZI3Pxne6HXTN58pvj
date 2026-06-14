@@ -17,7 +17,9 @@ delete headers.Host
 
 if (!url.startsWith(githubPrefix)) {
     $done({});
-     //return;
+/*
+    return;
+*/
 }
 
 if (changeTo == "") {
