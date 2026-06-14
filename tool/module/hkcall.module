@@ -1,8 +1,8 @@
 #!name=🆃🅾🅿🅼🅾🅳 HK Call
 #!desc=香港 SIM 卡 Wi-Fi Calling 配置规则
-# 本规则适用于 CSL、CMHK、3 HK 的香港 SIM 卡的 Wi-Fi Calling 功能，分流节点须是香港节点
 #!arguments=默认代理分组:"HK-Call"
 #!arguments-desc=·默认代理分组：默认使用模块内置的名为“HK-Call”的代理分组进行代理，可填入自定义的代理分组或节点名称\n\n·通话端口代理：模块默认代理了Wi-Fi通话常用的500和4500的UDP端口，填入#号可以禁用相关端口的代理\n\n·苹果地区检测：模块默认代理了苹果的地区检测URL地址，填入#号可以恢复为默认规则\n\n·地区检测查询：https://gspe1-ssl.ls.apple.com/pep/gcc
+# 本规则适用于 CSL、CMHK、3 HK 的香港 SIM 卡的 Wi-Fi Calling 功能，分流节点须是香港节点
 # 规则来源：https://github.com/ous50
 # 整理作者：https://github.com/LOWERTOP
 # 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
@@ -25,22 +25,22 @@ DOMAIN,ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org,HK-Call
 DOMAIN,ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org,HK-Call
 
 # CMHK
-IP-CIDR,182.239.86.0/24,HK-Call,no-resolve
-IP-CIDR,182.239.118.0/24,HK-Call,no-resolve
-IP-CIDR,203.142.127.0/24,HK-Call,no-resolve
 DOMAIN-SUFFIX,hk.chinamobile.com,HK-Call
 DOMAIN,h3a.prod.ondemandconnectivity.com,HK-Call
 DOMAIN,epdg.epc.mnc012.mcc454.pub.3gppnetwork.org,HK-Call
 DOMAIN,xcap.ims.mnc012.mcc454.pub.3gppnetwork.org,HK-Call
 DOMAIN,bsf.mnc012.mcc454.pub.3gppnetwork.org,HK-Call
+IP-CIDR,182.239.86.0/24,HK-Call,no-resolve
+IP-CIDR,182.239.118.0/24,HK-Call,no-resolve
+IP-CIDR,203.142.127.0/24,HK-Call,no-resolve
 
 # 3 HK
-IP-CIDR,4.209.41.157/32,HK-Call,no-resolve
-IP-CIDR,124.217.186.0/24,HK-Call,no-resolve
-IP-CIDR,203.145.92.0/24,HK-Call,no-resolve
 DOMAIN-SUFFIX,three.com.hk,HK-Call
 DOMAIN,hhk.prod.ondemandconnectivity.com,HK-Call
 DOMAIN-SUFFIX,mnc003.mcc454.pub.3gppnetwork.org,HK-Call
 DOMAIN-SUFFIX,mnc004.mcc454.pub.3gppnetwork.org,HK-Call
 DOMAIN-SUFFIX,mnc005.mcc454.pub.3gppnetwork.org,HK-Call
 DOMAIN-SUFFIX,mnc014.mcc454.pub.3gppnetwork.org,HK-Call
+IP-CIDR,4.209.41.157/32,HK-Call,no-resolve
+IP-CIDR,124.217.186.0/24,HK-Call,no-resolve
+IP-CIDR,203.145.92.0/24,HK-Call,no-resolve
