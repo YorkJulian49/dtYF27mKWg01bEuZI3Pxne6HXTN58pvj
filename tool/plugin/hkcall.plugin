@@ -7,8 +7,6 @@
 # 整理作者：https://github.com/LOWERTOP
 # 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
 
-
-
 [Rule]
 # 苹果地区检测
 DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,PROXY
@@ -24,22 +22,22 @@ DOMAIN,ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org,PROXY
 DOMAIN,ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org,PROXY
 
 # CMHK
-IP-CIDR,182.239.86.0/24,PROXY,no-resolve
-IP-CIDR,182.239.118.0/24,PROXY,no-resolve
-IP-CIDR,203.142.127.0/24,PROXY,no-resolve
 DOMAIN-SUFFIX,hk.chinamobile.com,PROXY
 DOMAIN,h3a.prod.ondemandconnectivity.com,PROXY
 DOMAIN,epdg.epc.mnc012.mcc454.pub.3gppnetwork.org,PROXY
 DOMAIN,xcap.ims.mnc012.mcc454.pub.3gppnetwork.org,PROXY
 DOMAIN,bsf.mnc012.mcc454.pub.3gppnetwork.org,PROXY
+IP-CIDR,182.239.86.0/24,PROXY,no-resolve
+IP-CIDR,182.239.118.0/24,PROXY,no-resolve
+IP-CIDR,203.142.127.0/24,PROXY,no-resolve
 
 # 3 HK
-IP-CIDR,4.209.41.157/32,PROXY,no-resolve
-IP-CIDR,124.217.186.0/24,PROXY,no-resolve
-IP-CIDR,203.145.92.0/24,PROXY,no-resolve
 DOMAIN-SUFFIX,three.com.hk,PROXY
 DOMAIN,hhk.prod.ondemandconnectivity.com,PROXY
 DOMAIN-SUFFIX,mnc003.mcc454.pub.3gppnetwork.org,PROXY
 DOMAIN-SUFFIX,mnc004.mcc454.pub.3gppnetwork.org,PROXY
 DOMAIN-SUFFIX,mnc005.mcc454.pub.3gppnetwork.org,PROXY
 DOMAIN-SUFFIX,mnc014.mcc454.pub.3gppnetwork.org,PROXY
+IP-CIDR,4.209.41.157/32,PROXY,no-resolve
+IP-CIDR,124.217.186.0/24,PROXY,no-resolve
+IP-CIDR,203.145.92.0/24,PROXY,no-resolve
