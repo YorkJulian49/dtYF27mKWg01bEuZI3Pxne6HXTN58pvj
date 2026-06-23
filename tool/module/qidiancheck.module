@@ -5,9 +5,9 @@
 #!arguments=是否开启抓取重写:true,是否开启调试模式:false,激励任务:false,每日任务:false,每日抽奖:false,每周兑换:false,章节卡片:false,大咖荐书:false
 
 [Script]
-起点读书获取Cookie = type=http-response,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/QDReader/qdreader.js,pattern=^https?:\/\/h5\.if\.qidian\.com\/argus\/api\/v1\/user\/getlogininfo,requires-body=true,argument="{{"CAPTURE_ENABLE":{{{是否开启抓取重写}}}},{"QDREADER_DEBUG":{{{是否开启调试模式}}}}}"
+起点读书获取Cookie = type=http-response,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/QDReader/qdreader.js,pattern=^https?:\/\/h5\.if\.qidian\.com\/argus\/api\/v1\/user\/getlogininfo,requires-body=true,argument="{"CAPTURE_ENABLE":{{{是否开启抓取重写}}},"QDREADER_DEBUG":{{{是否开启调试模式}}}}"
 
-起点读书自动签到 = type=cron,cronexp="* 11 02 * * ?",script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/QDReader/qdreader.js,requires-body=true,timeout=60,argument="{{"QDREADER_DEBUG":{{{是否开启调试模式}}}},{"QDREADER_ADV_JOB_ENABLE":{{{激励任务}}}},{"QDREADER_EXTRA_ADV_JOB_ENABLE":{{{每日任务}}}},{"QDREADER_LOTTERY_ENABLE":{{{每日抽奖}}}},{"QDREADER_WEEKLY_EXCHANGE_ENABLE":{{{每周兑换}}}},{"QDREADER_CHAPTER_CARD_ENABLE":{{{章节卡片}}}},{"QDREADER_MESSAGE_BOX_ENABLE":{{{大咖荐书}}}}"
+起点读书自动签到 = type=cron,cronexp="* 11 02 * * ?",script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/QDReader/qdreader.js,timeout=60,argument="{"QDREADER_DEBUG":{{{是否开启调试模式}}},"QDREADER_ADV_JOB_ENABLE":{{{激励任务}}},"QDREADER_EXTRA_ADV_JOB_ENABLE":{{{每日任务}}},"QDREADER_LOTTERY_ENABLE":{{{每日抽奖}}},"QDREADER_WEEKLY_EXCHANGE_ENABLE":{{{每周兑换}}},"QDREADER_CHAPTER_CARD_ENABLE":{{{章节卡片}}},"QDREADER_MESSAGE_BOX_ENABLE":{{{大咖荐书}}}}"
 
 [MITM]
 hostname = %APPEND% h5.if.qidian.com
