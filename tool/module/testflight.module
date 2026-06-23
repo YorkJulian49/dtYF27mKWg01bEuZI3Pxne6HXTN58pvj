@@ -7,7 +7,7 @@
 #!loon_version=3.4.0(962)
 #!homepage=https://hub.kelee.one
 #!date=2026-06-01 17:11:35
-#!arguments=捕获账号令牌:false,自动加入TF:false,监控TF位置:true,加入TF定时参数:"0 0/2 * * * ?",监控TF定时参数:"0 * * * * ?"
+#!arguments=捕获账号令牌:false,自动加入TF:false,监控TF位置:true
 
 [Rule]
 DOMAIN,testflight.apple.com,DIRECT
@@ -16,7 +16,7 @@ DOMAIN,testflight.apple.com,DIRECT
 获取账号令牌 = type=http-request,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/TestFlight/CaptureAccountToken.js,pattern=^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$,argument="{"CaptureAccountToken":{{{捕获账号令牌}}}}"
 
 
-自动加入TF = type=cron,cronexp="{"TaskCron":"{{{加入TF定时参数}}}"}",script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/TestFlight/AutoJoinTF.js,timeout=600,argument="{"RunTask":{{{自动加入TF}}},"RunMonitor":{{{监控TF位置}}}}"
+自动加入TF = type=cron,cronexp=""* 12 03 * * ?"",script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/TestFlight/AutoJoinTF.js,timeout=600,argument="{"RunTask":{{{自动加入TF}}},"RunMonitor":{{{监控TF位置}}}}"
 
 
-监控TF位置 = type=cron, cronexp="{"TaskMonitor":"{{{监控TF定时参数}}}"}",script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/TestFlight/AutoMonitorTF.js,timeout=30
+监控TF位置 = type=cron, cronexp=""* 11 02 * * ?"",script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/TestFlight/AutoMonitorTF.js,timeout=30
