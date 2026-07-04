@@ -1,3 +1,17 @@
+# binance
+DOMAIN-SUFFIX,bscdnweb.com
+IP-CIDR,47.106.171.207,no-resolve
+IP-CIDR,47.106.111.2,no-resolve
+IP-CIDR,106.15.179.166,no-resolve
+IP-CIDR,116.62.79.64,no-resolve
+IP-CIDR,120.24.233.110,no-resolve
+IP-CIDR,120.79.244.149,no-resolve
+# okx
+DOMAIN-SUFFIX,coinall.ltd
+IP-CIDR,47.98.188.132,no-resolve
+IP-CIDR,47.99.54.158,no-resolve
+IP-CIDR,47.97.124.22,no-resolve
+IP-CIDR,47.242.92.56,no-resolve
 # 饭太硬
 DOMAIN-SUFFIX,饭太硬.com
 DOMAIN-SUFFIX,xn--sss604efuw.com
