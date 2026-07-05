@@ -13,10 +13,13 @@ payload:
   # okx
   - DOMAIN-SUFFIX,coinall.ltd
   - DOMAIN-SUFFIX,cn-hongkong.aliyuncs.com
+  - IP-CIDR,43.174.242.196/32,no-resolve
   - IP-CIDR,47.98.188.132/32,no-resolve
   - IP-CIDR,47.99.54.158/32,no-resolve
   - IP-CIDR,47.97.124.22/32,no-resolve
   - IP-CIDR,47.242.92.56/32,no-resolve
+  - IP-CIDR,106.14.157.106/32,no-resolve
+  - IP-CIDR,139.196.189.101/32,no-resolve
   # 饭太硬
   - DOMAIN-SUFFIX,饭太硬.com
   - DOMAIN-SUFFIX,xn--sss604efuw.com
