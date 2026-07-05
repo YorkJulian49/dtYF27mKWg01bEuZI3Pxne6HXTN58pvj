@@ -1,8 +1,6 @@
 payload:
   # binance
-  - DOMAIN-SUFFIX,tobsnssdk.com
-  - DOMAIN-SUFFIX,geetest.com
-  - DOMAIN-SUFFIX,bscdnweb.com
+  - DOMAIN,static.bscdnweb.com
   - IP-CIDR,8.210.73.205/32,no-resolve
   - IP-CIDR,47.106.171.207/32,no-resolve
   - IP-CIDR,47.106.111.2/32,no-resolve
@@ -11,8 +9,10 @@ payload:
   - IP-CIDR,120.24.233.110/32,no-resolve
   - IP-CIDR,120.79.244.149/32,no-resolve
   # okx
-  - DOMAIN-SUFFIX,coinall.ltd
-  - DOMAIN-SUFFIX,cn-hongkong.aliyuncs.com
+  - DOMAIN,toblog.tobsnssdk.com
+  - DOMAIN,dkapi.geetest.com
+  - DOMAIN,jpush.coinall.ltd
+  - DOMAIN,cloudauth-device.cn-hongkong.aliyuncs.com
   - IP-CIDR,43.174.242.196/32,no-resolve
   - IP-CIDR,47.98.188.132/32,no-resolve
   - IP-CIDR,47.99.54.158/32,no-resolve
