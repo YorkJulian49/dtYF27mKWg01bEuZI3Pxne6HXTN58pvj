@@ -2,12 +2,14 @@
   "version": 3,
   "rules": [
     {
+      "domain": [
+        "static.bscdnweb.com",
+        "toblog.tobsnssdk.com",
+        "dkapi.geetest.com",
+        "jpush.coinall.ltd",
+        "cloudauth-device.cn-hongkong.aliyuncs.com"
+      ],
       "domain_suffix": [
-        "tobsnssdk.com",
-        "geetest.com",
-        "bscdnweb.com",
-        "coinall.ltd",
-        "cn-hongkong.aliyuncs.com",
         "饭太硬.com",
         "xn--sss604efuw.com"
       ],
