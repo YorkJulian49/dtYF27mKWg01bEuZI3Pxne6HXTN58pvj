@@ -3,6 +3,7 @@
   "rules": [
     {
       "package_name": [
+        "ano.subcase",
         "com.google.android.apps.translate",
         "xyz.blueskyweb.app",
         "com.google.android.keep",
