@@ -1,4 +1,5 @@
 payload:
+  - PROCESS-NAME,ano.subcase #SubCase
   - PROCESS-NAME,com.google.android.apps.translate #Translate
   - PROCESS-NAME,xyz.blueskyweb.app #Bluesky
   - PROCESS-NAME,com.google.android.keep #Keep Notes
