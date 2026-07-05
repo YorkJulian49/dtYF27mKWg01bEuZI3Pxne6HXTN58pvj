@@ -8,6 +8,7 @@ IP-CIDR,120.24.233.110/32,no-resolve
 IP-CIDR,120.79.244.149/32,no-resolve
 # okx
 DOMAIN-SUFFIX,coinall.ltd
+DOMAIN-SUFFIX,cn-hongkong.aliyuncs.com
 IP-CIDR,47.98.188.132/32,no-resolve
 IP-CIDR,47.99.54.158/32,no-resolve
 IP-CIDR,47.97.124.22/32,no-resolve
