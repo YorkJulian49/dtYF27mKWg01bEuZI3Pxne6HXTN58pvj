@@ -1,24 +1,3 @@
-# binance
-DOMAIN,static.bscdnweb.com
-IP-CIDR,8.210.73.205/32,no-resolve
-IP-CIDR,47.106.171.207/32,no-resolve
-IP-CIDR,47.106.111.2/32,no-resolve
-IP-CIDR,106.15.179.166/32,no-resolve
-IP-CIDR,116.62.79.64/32,no-resolve
-IP-CIDR,120.24.233.110/32,no-resolve
-IP-CIDR,120.79.244.149/32,no-resolve
-# okx
-DOMAIN,toblog.tobsnssdk.com
-DOMAIN,dkapi.geetest.com
-DOMAIN,jpush.coinall.ltd
-DOMAIN,cloudauth-device.cn-hongkong.aliyuncs.com
-IP-CIDR,43.174.242.196/32,no-resolve
-IP-CIDR,47.98.188.132/32,no-resolve
-IP-CIDR,47.99.54.158/32,no-resolve
-IP-CIDR,47.97.124.22/32,no-resolve
-IP-CIDR,47.242.92.56/32,no-resolve
-IP-CIDR,106.14.157.106/32,no-resolve
-IP-CIDR,139.196.189.101/32,no-resolve
 # 饭太硬
 DOMAIN-SUFFIX,饭太硬.com
 DOMAIN-SUFFIX,xn--sss604efuw.com
