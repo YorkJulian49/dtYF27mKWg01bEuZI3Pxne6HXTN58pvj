@@ -1,6 +1,11 @@
 payload:
   # binance
   - DOMAIN,static.bscdnweb.com
+  - DOMAIN,dquery.sintral.me
+  - DOMAIN,www.asterdex.tv
+  - DOMAIN,www.asterdex.com
+  - DOMAIN,www.asterdex.mobi
+  - DOMAIN,ap-northeast-1.elb.amazonaws.com
   - IP-CIDR,8.210.73.205/32,no-resolve
   - IP-CIDR,47.106.171.207/32,no-resolve
   - IP-CIDR,47.106.111.2/32,no-resolve
@@ -8,6 +13,7 @@ payload:
   - IP-CIDR,116.62.79.64/32,no-resolve
   - IP-CIDR,120.24.233.110/32,no-resolve
   - IP-CIDR,120.79.244.149/32,no-resolve
+  - IP-CIDR,172.66.1.246/32,no-resolve
   # okx
   - DOMAIN,toblog.tobsnssdk.com
   - DOMAIN,dkapi.geetest.com
