@@ -7,7 +7,8 @@
         "toblog.tobsnssdk.com",
         "dkapi.geetest.com",
         "jpush.coinall.ltd",
-        "cloudauth-device.cn-hongkong.aliyuncs.com"
+        "cloudauth-device.cn-hongkong.aliyuncs.com",
+        "contendvc.cnouyi.pizza"
       ],
       "ip_cidr": [
         "8.210.73.205/32",
