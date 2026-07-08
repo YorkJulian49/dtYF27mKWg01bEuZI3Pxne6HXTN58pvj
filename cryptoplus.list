@@ -4,7 +4,7 @@ DOMAIN,dquery.sintral.me
 DOMAIN,www.asterdex.tv
 DOMAIN,www.asterdex.com
 DOMAIN,www.asterdex.mobi
-DOMAIN,ap-northeast-1.elb.amazonaws.com
+DOMAIN-SUFFIX,ap-northeast-1.elb.amazonaws.com
 IP-CIDR,8.210.73.205/32,no-resolve
 IP-CIDR,47.106.171.207/32,no-resolve
 IP-CIDR,47.106.111.2/32,no-resolve
@@ -19,8 +19,8 @@ DOMAIN,dkapi.geetest.com
 DOMAIN,jpush.coinall.ltd
 DOMAIN,cloudauth-device.cn-hongkong.aliyuncs.com
 DOMAIN,contendvc.cnouyi.pizza
-DOMAIN,com.eo.dnse4.com
 DOMAIN,okg.threatcast.guardsquare.com
+DOMAIN-SUFFIX,com.eo.dnse4.com
 IP-CIDR,43.174.242.196/32,no-resolve
 IP-CIDR,47.98.188.132/32,no-resolve
 IP-CIDR,47.99.54.158/32,no-resolve
