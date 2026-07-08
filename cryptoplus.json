@@ -4,6 +4,15 @@
     {
       "domain": [
         "static.bscdnweb.com",
+        "dquery.sintral.me",
+        "www.asterdex.tv",
+        "www.asterdex.com",
+        "www.asterdex.mobi",
+
+
+
+
+        
         "toblog.tobsnssdk.com",
         "dkapi.geetest.com",
         "jpush.coinall.ltd",
@@ -20,6 +29,7 @@
         "116.62.79.64/32",
         "120.24.233.110/32",
         "120.79.244.149/32",
+        "172.66.1.246/32",
         "43.174.242.196/32",
         "47.98.188.132/32",
         "47.99.54.158/32",
