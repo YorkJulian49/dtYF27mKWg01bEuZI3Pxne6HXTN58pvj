@@ -14,6 +14,7 @@ DOMAIN,jpush.coinall.ltd
 DOMAIN,cloudauth-device.cn-hongkong.aliyuncs.com
 DOMAIN,contendvc.cnouyi.pizza
 DOMAIN,com.eo.dnse4.com
+DOMAIN,okg.threatcast.guardsquare.com
 IP-CIDR,43.174.242.196/32,no-resolve
 IP-CIDR,47.98.188.132/32,no-resolve
 IP-CIDR,47.99.54.158/32,no-resolve
