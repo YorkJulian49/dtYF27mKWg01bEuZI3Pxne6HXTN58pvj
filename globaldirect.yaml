@@ -8,9 +8,11 @@ payload:
   - DOMAIN,testingcf.jsdelivr.net
   - DOMAIN,time.windows.com
   - DOMAIN,music.kukuqaq.com
+  - DOMAIN,findermp.video.qq.com
   - DOMAIN-SUFFIX,ghproxy.com
   - DOMAIN-SUFFIX,readest.com
   - DOMAIN-SUFFIX,langge.cf
   - DOMAIN-SUFFIX,gyks.cf
   - DOMAIN-SUFFIX,1music.cc
   - DOMAIN-SUFFIX,adfgawidhioawjd.site
+  
