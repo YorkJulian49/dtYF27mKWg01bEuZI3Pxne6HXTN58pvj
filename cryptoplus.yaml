@@ -29,3 +29,11 @@ payload:
   - IP-CIDR,47.242.92.56/32,no-resolve
   - IP-CIDR,106.14.157.106/32,no-resolve
   - IP-CIDR,139.196.189.101/32,no-resolve
+  # okx
+  - DOMAIN,noonessupport.zendesk.com
+  - DOMAIN,aacdn.nagich.com
+  - DOMAIN,static.wdgtsrc.com
+  - DOMAIN-SUFFIX,noones.com
+  - DOMAIN-SUFFIX,noones.app
+  - DOMAIN-SUFFIX,noones.global
+
