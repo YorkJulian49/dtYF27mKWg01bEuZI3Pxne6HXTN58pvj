@@ -16,7 +16,11 @@
         "okg.threatcast.guardsquare.com",
         "noonessupport.zendesk.com",
         "aacdn.nagich.com",
-        "static.wdgtsrc.com"
+        "static.wdgtsrc.com",
+        "gcaptcha4.geetest.com",
+        "gcaptcha4.geevisit.com",
+        "static.geetest.com",
+        "static.geevisit.com"
       ],
       "domain-suffix": [
         "ap-northeast-1.elb.amazonaws.com",
