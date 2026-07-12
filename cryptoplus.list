@@ -32,10 +32,10 @@ IP-CIDR,139.196.189.101/32,no-resolve
 DOMAIN,noonessupport.zendesk.com
 DOMAIN,aacdn.nagich.com
 DOMAIN,static.wdgtsrc.com
-DOMAIN,gcaptcha4.geetest.com
-DOMAIN,gcaptcha4.geevisit.com
-DOMAIN,static.geetest.com
-DOMAIN,static.geevisit.com
+#DOMAIN,gcaptcha4.geetest.com
+#DOMAIN,gcaptcha4.geevisit.com
+#DOMAIN,static.geetest.com
+#DOMAIN,static.geevisit.com
 DOMAIN-SUFFIX,noones.com
 DOMAIN-SUFFIX,noones.app
 DOMAIN-SUFFIX,noones.global
