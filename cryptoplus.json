@@ -13,11 +13,17 @@
         "jpush.coinall.ltd",
         "cloudauth-device.cn-hongkong.aliyuncs.com",
         "contendvc.cnouyi.pizza",
-        "okg.threatcast.guardsquare.com"
+        "okg.threatcast.guardsquare.com",
+        "noonessupport.zendesk.com",
+        "aacdn.nagich.com",
+        "static.wdgtsrc.com"
       ],
       "domain-suffix": [
         "ap-northeast-1.elb.amazonaws.com",
-        "com.eo.dnse4.com"
+        "com.eo.dnse4.com",
+        "noones.com",
+        "noones.app",
+        "noones.global"
       ],
       "ip_cidr": [
         "8.210.73.205/32",
