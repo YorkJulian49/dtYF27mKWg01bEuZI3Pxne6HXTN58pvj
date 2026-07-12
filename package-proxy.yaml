@@ -6,7 +6,6 @@ payload:
   - PROCESS-NAME,com.google.android.apps.tasks #Tasks
   - PROCESS-NAME,io.raindrop.raindropio #Raindrop
   - PROCESS-NAME,com.instagram.android #Instagram
-  - PROCESS-NAME,team.noones.mobilemessenger #NoOnes
   - PROCESS-NAME,com.tumblr #Tumblr
   - PROCESS-NAME,com.linkedin.android #LinkedIn
   - PROCESS-NAME,org.thoughtcrime.securesms #Signal
