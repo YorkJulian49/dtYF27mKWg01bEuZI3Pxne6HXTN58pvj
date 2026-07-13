@@ -22,7 +22,7 @@
         "static.geetest.com",
         "static.geevisit.com"
       ],
-      "domain-suffix": [
+      "domain_suffix": [
         "ap-northeast-1.elb.amazonaws.com",
         "com.eo.dnse4.com",
         "noones.com",
