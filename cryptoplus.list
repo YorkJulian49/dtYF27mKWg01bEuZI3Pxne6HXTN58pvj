@@ -4,6 +4,8 @@ DOMAIN,dquery.sintral.me
 DOMAIN,www.asterdex.tv
 DOMAIN,www.asterdex.com
 DOMAIN,www.asterdex.mobi
+DOMAIN,www.bnw3w.com
+DOMAIN,nbstream.bnw3w.com
 DOMAIN-SUFFIX,ap-northeast-1.elb.amazonaws.com
 IP-CIDR,8.210.73.205/32,no-resolve
 IP-CIDR,47.106.171.207/32,no-resolve
@@ -20,6 +22,10 @@ DOMAIN,jpush.coinall.ltd
 DOMAIN,cloudauth-device.cn-hongkong.aliyuncs.com
 DOMAIN,contendvc.cnouyi.pizza
 DOMAIN,okg.threatcast.guardsquare.com
+DOMAIN,wallet.ouxyi.cas
+DOMAIN,wallet.okex.org
+DOMAIN,www.okox-doh.com
+DOMAIN,www.okx-httpdns.com
 DOMAIN-SUFFIX,com.eo.dnse4.com
 IP-CIDR,43.174.242.196/32,no-resolve
 IP-CIDR,47.98.188.132/32,no-resolve
@@ -28,6 +34,8 @@ IP-CIDR,47.97.124.22/32,no-resolve
 IP-CIDR,47.242.92.56/32,no-resolve
 IP-CIDR,106.14.157.106/32,no-resolve
 IP-CIDR,139.196.189.101/32,no-resolve
+# coinall
+DOMAIN,static.coinall.ltd
 # noones
 DOMAIN,noonessupport.zendesk.com
 DOMAIN,aacdn.nagich.com
