@@ -21,7 +21,7 @@ payload:
   - PROCESS-NAME,de.danoeh.antennapod #antennapod
   - PROCESS-NAME,com.apple.android.music #apple music
   - PROCESS-NAME,com.cfdata #cf-data
-  - PROCESS-NAME,com.cfnat.manager #cfnat manager
+  - PROCESS-NAME,com.cfnat.app #cfnat manager
   - PROCESS-NAME,com.bilingify.readest #readest
   - PROCESS-NAME,com.tmri.app.main #交管12123
   - PROCESS-NAME,ctrip.android.view #携程旅行
