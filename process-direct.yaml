@@ -1,4 +1,5 @@
 payload:
+  - PROCESS-NAME,CFnat.exe
   - PROCESS-NAME,QQ.exe
   - PROCESS-NAME,Weixin.exe
   - PROCESS-NAME,WeChatAppEx.exe
