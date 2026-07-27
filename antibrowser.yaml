@@ -14,4 +14,5 @@ payload:
   - DOMAIN-SUFFIX,bitbrowser.cn
   - DOMAIN-SUFFIX,gologin.com
   - DOMAIN-SUFFIX,vbhub.net
+  - IP-CIDR,27.148.248.196/32,no-resolve
 
