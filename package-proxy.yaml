@@ -18,7 +18,6 @@ payload:
   - PROCESS-NAME,com.twitter.android #X
   - PROCESS-NAME,com.quora.android #Quora
   - PROCESS-NAME,air.com.rosettastone.mobile.CoursePlayer #Rosetta Stone
-  - PROCESS-NAME,com.gologin.gologin_mobile #GoLogin
   - PROCESS-NAME,com.google.android.apps.docs.editors.slides #Slides
   - PROCESS-NAME,com.github.android #GitHub
   - PROCESS-NAME,com.instagram.barcelona #Threads
@@ -40,7 +39,6 @@ payload:
   - PROCESS-NAME,org.joinmastodon.android #Mastodon
   - PROCESS-NAME,com.facebook.katana #Facebook
   - PROCESS-NAME,com.aurora.store #Aurora Store
-  - PROCESS-NAME,org.gologin.orbita #Orbita
   - PROCESS-NAME,com.amazon.mShop.android.shopping #Amazon Shopping
   - PROCESS-NAME,jp.naver.line.android #LINE
   - PROCESS-NAME,com.google.android.apps.docs.editors.sheets #Sheets
