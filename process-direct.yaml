@@ -17,3 +17,4 @@ payload:
   - PROCESS-NAME,AweSun.exe
   - PROCESS-NAME,awesun_guard.exe
   - PROCESS-NAME,TomatoNovelDownloader.exe
+  - PROCESS-NAME,readest.exe
