@@ -1,4 +1,6 @@
 payload:
+  - DOMAIN,msftconnecttest.com
+  - DOMAIN,msftncsi.com
   - DOMAIN,clash.razord.top
   - DOMAIN,yacd.metacubex.one
   - DOMAIN,yacd.haishan.me
