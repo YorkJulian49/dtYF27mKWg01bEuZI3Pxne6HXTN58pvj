@@ -1,4 +1,6 @@
 #以下是直连规则
+DOMAIN,msftconnecttest.com
+DOMAIN,msftncsi.com
 DOMAIN,clash.razord.top
 DOMAIN,yacd.metacubex.one
 DOMAIN,yacd.haishan.me
