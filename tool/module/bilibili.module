@@ -3,6 +3,15 @@
 # 仓库地址 https://github.com/app2smile/rules
 # h2下走grpc.biliapi.net(Surge TF2332以上版本可正常解析) h1时走app.bilibili.com
 
+[Rule]
+
+DOMAIN,bsbsb.top,REJECT
+DOMAIN,api.biliapi.com,REJECT
+DOMAIN,app.biliapi.com,REJECT
+DOMAIN,api.biliapi.net,REJECT
+DOMAIN,app.biliapi.net,REJECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+
 [Script]
 bili-json = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/Bilibili/bilibili-json.js,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=true,max-size=0
 
