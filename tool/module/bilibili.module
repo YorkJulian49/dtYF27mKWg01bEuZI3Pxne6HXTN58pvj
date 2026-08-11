@@ -10,7 +10,7 @@ DOMAIN,api.biliapi.com,REJECT
 DOMAIN,app.biliapi.com,REJECT
 DOMAIN,api.biliapi.net,REJECT
 DOMAIN,app.biliapi.net,REJECT
-DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+AND,((DOMAIN-SUFFIX,chat.bilibili.com),(OR,((DOMAIN-KEYWORD,stun),(DOMAIN-KEYWORD,tracker),(DOMAIN-KEYWORD,p2p)))),REJECT
 
 [Script]
 bili-json = type=http-response,script-path=https://raw.githubusercontent.com/YorkJulian49/dtYF27mKWg01bEuZI3Pxne6HXTN58pvj/refs/heads/main/JavaScript/Bilibili/bilibili-json.js,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=true,max-size=0
