@@ -1,5 +1,5 @@
 # 以下是双开分身规则
-api.mgtool.cn
+DOMAIN,api.mgtool.cn
 # 以下是pixel的更新规则
 DOMAIN,ota.googlezip.net
 DOMAIN,ota-cache1.googlezip.net
