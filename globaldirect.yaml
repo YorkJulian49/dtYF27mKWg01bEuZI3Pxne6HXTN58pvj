@@ -16,3 +16,17 @@ payload:
   - DOMAIN-SUFFIX,gyks.cf
   - DOMAIN-SUFFIX,1music.cc
   - DOMAIN-SUFFIX,adfgawidhioawjd.site
+  # 优选域名
+  - DOMAIN,cf.877774.xyz
+  - DOMAIN,cloudflare.182682.xyz
+  - DOMAIN,7710.cloudflare.182682.xyz
+  - DOMAIN,cdn.9889888.xyz
+  - DOMAIN,freeyx.cloudflare88.eu.org
+  - DOMAIN,cf.090227.xyz
+  - DOMAIN,cf.0sm.com
+  - DOMAIN,cf.nyanya.moe
+  - DOMAIN,cf.itv888.cn
+  - DOMAIN,cfyx.tencentapp.cn
+  # airport节点域名
+  - DOMAIN,zlhy2.dgfmb.cn
+  - DOMAIN,tgxaws.dgfmb.cn
