@@ -62,7 +62,10 @@
         "com.google.android.inputmethod.latin",
         "com.google.android.youtube",
         "com.google.android.apps.weather",
-        "com.google.android.calendar"
+        "com.google.android.calendar",
+        "app.morphe.manager",
+        "app.morphe.android.youtube",
+        "app.morphe.android.apps.youtube.music"
       ]
     }
   ]
