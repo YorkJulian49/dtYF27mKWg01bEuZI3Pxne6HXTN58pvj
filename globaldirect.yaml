@@ -15,6 +15,6 @@ payload:
   - DOMAIN-SUFFIX,1music.cc
   - DOMAIN-SUFFIX,adfgawidhioawjd.site
   # 人人视频
-  - DOMAIN,img.qwapp.top
+  - DOMAIN-SUFFIX,qwapp.top
   - DOMAIN-SUFFIX,azwlkj.com
   - DOMAIN-SUFFIX,gxzmei.com
