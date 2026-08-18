@@ -65,7 +65,8 @@
         "com.google.android.calendar",
         "app.morphe.manager",
         "app.morphe.android.youtube",
-        "app.morphe.android.apps.youtube.music"
+        "app.morphe.android.apps.youtube.music",
+        "com.pikcloud.pikpak"
       ]
     }
   ]
