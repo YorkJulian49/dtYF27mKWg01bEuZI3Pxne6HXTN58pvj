@@ -51,3 +51,4 @@ payload:
   - PROCESS-NAME,com.xunmeng.pinduoduo #拼多多
   - PROCESS-NAME,com.sankuai.meituan #美团
   - PROCESS-NAME,com.sankuai.meituan.takeoutnew #美团外卖
+  - PROCESS-NAME,com.cfdata.web #cfdata-web
