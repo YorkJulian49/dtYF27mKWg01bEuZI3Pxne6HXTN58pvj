@@ -54,7 +54,8 @@
         "com.jingdong.app.mall",
         "com.xunmeng.pinduoduo",
         "com.sankuai.meituan",
-        "com.sankuai.meituan.takeoutnew"
+        "com.sankuai.meituan.takeoutnew",
+        "com.cfdata.web"
       ]
     }
   ]
