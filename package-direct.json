@@ -55,7 +55,8 @@
         "com.xunmeng.pinduoduo",
         "com.sankuai.meituan",
         "com.sankuai.meituan.takeoutnew",
-        "com.cfdata.web"
+        "com.cfdata.web",
+        "org.breezyweather"
       ]
     }
   ]
