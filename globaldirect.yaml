@@ -22,3 +22,7 @@ payload:
   - DOMAIN-SUFFIX,rrmj.plus
   - DOMAIN-SUFFIX,yichengwlkj.com
   - DOMAIN-SUFFIX,qwdjapp.com
+  # koofr
+  - DOMAIN-SUFFIX,koofr.net
+  # infini-cloud
+  - DOMAIN-SUFFIX,infini-cloud.net
