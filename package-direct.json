@@ -56,7 +56,8 @@
         "com.sankuai.meituan",
         "com.sankuai.meituan.takeoutnew",
         "com.cfdata.web",
-        "org.breezyweather"
+        "org.breezyweather",
+        "org.handmadeideas.floccus"
       ]
     }
   ]
