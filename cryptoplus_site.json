@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "static.bscdnweb.com",
+        "dquery.sintral.me",
+        "www.asterdex.tv",
+        "www.asterdex.com",
+        "www.asterdex.mobi",
+        "www.bnw3w.com",
+        "nbstream.bnw3w.com",
+        "toblog.tobsnssdk.com",
+        "dkapi.geetest.com",
+        "jpush.coinall.ltd",
+        "cloudauth-device.cn-hongkong.aliyuncs.com",
+        "contendvc.cnouyi.pizza",
+        "okg.threatcast.guardsquare.com",
+        "wallet.ouxyi.cash",
+        "wallet.okex.org",
+        "www.okx-doh.com",
+        "www.okx-httpdns.com",
+        "static.coinall.ltd",
+        "noonessupport.zendesk.com",
+        "aacdn.nagich.com",
+        "static.wdgtsrc.com",
+        "gcaptcha4.geetest.com",
+        "gcaptcha4.geevisit.com",
+        "static.geetest.com",
+        "static.geevisit.com"
+      ],
+      "domain_suffix": [
+        "ap-northeast-1.elb.amazonaws.com",
+        "com.eo.dnse4.com",
+        "noones.com",
+        "noones.app",
+        "noones.global"
+      ]
+    }
+  ]
+}

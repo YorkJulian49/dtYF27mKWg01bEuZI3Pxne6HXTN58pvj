@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "push.apple.com",
+        "akadns.net"
+      ],
+      "domain_keyword": [
+        "apple.com.edgekey.net"
+      ]
+    }
+  ]
+}

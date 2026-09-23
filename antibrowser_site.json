@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain": [
+        "browser-fingerprint-assets.oss-cn-hongkong.aliyuncs.com",
+        "bitbrowser-images.oss-accelerate.aliyuncs.com",
+        "bitbrowser-images.oss-cn-hongkong.aliyuncs.com",
+        "browser-extend-hk.oss-cn-hongkong.aliyuncs.com"
+      ],
+      "domain_suffix": [
+        "decodo.com",
+        "smartproxy.com",
+        "virtualbrowser.cc",
+        "ixbrowser.com",
+        "ix-y.com",
+        "ixspy.cn",
+        "ixspy.com",
+        "bitbrowser.net",
+        "bitbrowser.cn",
+        "gologin.com",
+        "vbhub.net"
+      ]
+    }
+  ]
+}
+
