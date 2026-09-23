@@ -7,9 +7,7 @@
         "bitbrowser-images.oss-accelerate.aliyuncs.com",
         "bitbrowser-images.oss-cn-hongkong.aliyuncs.com",
         "browser-extend-hk.oss-cn-hongkong.aliyuncs.com"
-      ]
-    },
-    {
+      ],
       "domain_suffix": [
         "decodo.com",
         "smartproxy.com",
@@ -22,9 +20,7 @@
         "bitbrowser.cn",
         "gologin.com",
         "vbhub.net"
-      ]
-    },
-    {
+      ],
       "ip_cidr": [
         "27.148.248.196/32"
       ]
