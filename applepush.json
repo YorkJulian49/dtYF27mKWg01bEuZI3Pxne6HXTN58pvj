@@ -5,14 +5,10 @@
       "domain_suffix": [
         "push.apple.com",
         "akadns.net"
-      ]
-    },
-    {
+      ],
       "domain_keyword": [
         "apple.com.edgekey.net"
-      ]
-    },
-    {
+      ],
       "ip_cidr": [
         "17.249.0.0/16",
         "17.252.0.0/16",
