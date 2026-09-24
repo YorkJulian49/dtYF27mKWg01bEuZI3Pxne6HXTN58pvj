@@ -68,7 +68,9 @@
         "app.morphe.android.apps.youtube.music",
         "com.pikcloud.pikpak",
         "com.polymarket.android",
-        "com.facebook.ember"
+        "com.facebook.ember",
+        "app.morphe.android.youtube",
+        "app.morphe.android.apps.youtube.music"
       ]
     }
   ]
