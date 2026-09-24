@@ -69,8 +69,7 @@
         "com.pikcloud.pikpak",
         "com.polymarket.android",
         "com.facebook.ember",
-        "org.fdroid.fdroid",
-        "com.aurora.store"
+        "org.fdroid.fdroid"
       ]
     }
   ]
