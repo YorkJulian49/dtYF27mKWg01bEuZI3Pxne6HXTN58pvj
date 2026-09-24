@@ -62,10 +62,10 @@ payload:
   - PROCESS-NAME,app.morphe.manager #Morphe
   - PROCESS-NAME,app.morphe.android.youtube #Morphe YouTube
   - PROCESS-NAME,app.morphe.android.apps.youtube.music #Morphe YT Music
-  - PROCESS-NAME,com.pikcloud.pikpak # PikPak
-  - PROCESS-NAME,com.polymarket.android # PolyMarket
-  - PROCESS-NAME,com.facebook.ember # Facebook Forum
-  - PROCESS-NAME,app.morphe.android.youtube # YouTube Morphe
-  - PROCESS-NAME,app.morphe.android.apps.youtube.music # YT Music Morphe
+  - PROCESS-NAME,com.pikcloud.pikpak #PikPak
+  - PROCESS-NAME,com.polymarket.android #PolyMarket
+  - PROCESS-NAME,com.facebook.ember #Facebook Forum
+  - PROCESS-NAME,org.fdroid.fdroid #F-Droid
+  - PROCESS-NAME,com.aurora.store #Aurora Store
 
 
