@@ -66,5 +66,3 @@ payload:
   - PROCESS-NAME,com.polymarket.android #PolyMarket
   - PROCESS-NAME,com.facebook.ember #Facebook Forum
   - PROCESS-NAME,org.fdroid.fdroid #F-Droid
-
-
