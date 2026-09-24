@@ -65,4 +65,7 @@ payload:
   - PROCESS-NAME,com.pikcloud.pikpak # PikPak
   - PROCESS-NAME,com.polymarket.android # PolyMarket
   - PROCESS-NAME,com.facebook.ember # Facebook Forum
+  - PROCESS-NAME,app.morphe.android.youtube # YouTube Morphe
+  - PROCESS-NAME,app.morphe.android.youtube # YouTube Morphe
+
 
