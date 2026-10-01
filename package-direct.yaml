@@ -3,6 +3,7 @@ payload:
   - PROCESS-NAME,com.google.android.apps.scone #adaptive connectivity services
   - PROCESS-NAME,com.tencent.mtt #QQ浏览器
   - PROCESS-NAME,com.tencent.mobileqq #QQ
+  - PROCESS-NAME,com.tencent.mm #WEIXIN
   - PROCESS-NAME,com.tencent.mm #微信
   - PROCESS-NAME,com.youdao.dict #网易有道词典
   - PROCESS-NAME,com.youdao.hindict #U-Dictionary
