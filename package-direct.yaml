@@ -31,7 +31,6 @@ payload:
   - PROCESS-NAME,com.umetrip.android.msky.app #航旅纵横
   - PROCESS-NAME,com.baidu.BaiduMap #百度地图
   - PROCESS-NAME,com.autonavi.minimap #高德地图
-  - PROCESS-NAME,com.MobileTicket #铁路12306
   - PROCESS-NAME,com.youku.phone #优酷视频
   - PROCESS-NAME,com.tencent.qqlive #腾讯视频
   - PROCESS-NAME,tv.pps.mobile #爱奇艺随刻
