@@ -17,10 +17,6 @@ payload:
   - DOMAIN-SUFFIX,readest.com
   # 大灰狼小说
   - DOMAIN-SUFFIX,langge.cf
-  - DOMAIN-SUFFIX,gyks.cf
-  - DOMAIN,music.kukuqaq.com
-  - DOMAIN-SUFFIX,1music.cc
-  - DOMAIN-SUFFIX,adfgawidhioawjd.site
   # 人人视频
   - DOMAIN-SUFFIX,qwapp.top
   - DOMAIN-SUFFIX,azwlkj.com
@@ -32,3 +28,8 @@ payload:
   - DOMAIN-SUFFIX,koofr.net
   # infini-cloud
   - DOMAIN-SUFFIX,infini-cloud.net
+  # 待测试
+  - DOMAIN-SUFFIX,gyks.cf
+  - DOMAIN,music.kukuqaq.com
+  - DOMAIN-SUFFIX,1music.cc
+  - DOMAIN-SUFFIX,adfgawidhioawjd.site
