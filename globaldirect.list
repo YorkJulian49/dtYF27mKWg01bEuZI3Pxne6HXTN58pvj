@@ -1,25 +1,34 @@
-#以下是直连规则
+# 代理webui
 DOMAIN,clash.razord.top
 DOMAIN,yacd.metacubex.one
 DOMAIN,yacd.haishan.me
 DOMAIN,d.metacubex.one
 DOMAIN,board.zash.run.place
+# cdn镜像
 DOMAIN,cdn.jsdelivr.net
 DOMAIN,testingcf.jsdelivr.net
-DOMAIN,time.windows.com
-DOMAIN,music.kukuqaq.com
-DOMAIN,subs.839797.xyz
 DOMAIN-SUFFIX,ghproxy.com
+# windows时间
+DOMAIN,time.windows.com
+# sub-store
+DOMAIN,subs.839797.xyz
+# readest
 DOMAIN-SUFFIX,readest.com
+# 大灰狼小说
 DOMAIN-SUFFIX,langge.cf
-DOMAIN-SUFFIX,gyks.cf
-DOMAIN-SUFFIX,1music.cc
-DOMAIN-SUFFIX,adfgawidhioawjd.site
+# 人人视频
 DOMAIN-SUFFIX,qwapp.top
 DOMAIN-SUFFIX,azwlkj.com
 DOMAIN-SUFFIX,gxzmei.com
 DOMAIN-SUFFIX,rrmj.plus
 DOMAIN-SUFFIX,yichengwlkj.com
 DOMAIN-SUFFIX,qwdjapp.com
+# koofr
 DOMAIN-SUFFIX,koofr.net
+# infini-cloud
 DOMAIN-SUFFIX,infini-cloud.net
+# 待测试
+DOMAIN-SUFFIX,gyks.cf
+DOMAIN,music.kukuqaq.com
+DOMAIN-SUFFIX,1music.cc
+DOMAIN-SUFFIX,adfgawidhioawjd.site
