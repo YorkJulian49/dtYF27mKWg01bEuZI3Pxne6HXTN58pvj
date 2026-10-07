@@ -11,7 +11,8 @@
       ],
       "domain": [
         "cdn.jsdelivr.net",
-        "testingcf.jsdelivr.net"
+        "testingcf.jsdelivr.net",
+        "accel.829797.xyz"
       ],
       "domain_suffix": [        
         "ghproxy.com"
