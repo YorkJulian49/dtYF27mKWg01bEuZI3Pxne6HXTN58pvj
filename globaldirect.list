@@ -8,6 +8,7 @@ DOMAIN,board.zash.run.place
 DOMAIN,cdn.jsdelivr.net
 DOMAIN,testingcf.jsdelivr.net
 DOMAIN-SUFFIX,ghproxy.com
+DOMAIN-SUFFIX,accel.829797.xyz
 # windows时间
 DOMAIN,time.windows.com
 # sub-store
