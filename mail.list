@@ -1,0 +1,61 @@
+# Gmail
+DOMAIN,imap.gmail.com
+DOMAIN,pop.gmail.com
+DOMAIN,smtp.gmail.com
+
+# Yahoo Mail
+DOMAIN,imap.mail.yahoo.com
+DOMAIN,smtp.mail.yahoo.com
+DOMAIN,pop.mail.yahoo.com
+DOMAIN,apple.imap.mail.yahoo.com
+DOMAIN,apple.smtp.mail.yahoo.com
+
+# Yandex Mail
+DOMAIN,imap.yandex.com
+DOMAIN,pop.yandex.com
+DOMAIN,smtp.yandex.com
+
+# AOL Mail
+DOMAIN,imap.aol.com
+DOMAIN,pop.aol.com
+DOMAIN,smtp.aol.com
+
+# GMX Mail
+DOMAIN,imap.gmx.com
+DOMAIN,pop.gmx.com
+DOMAIN,smtp.gmx.com
+DOMAIN,mail.gmx.com
+
+# AOL Mail
+DOMAIN,imap.aol.com
+DOMAIN,pop.aol.com
+DOMAIN,smtp.aol.com
+
+# Mail.com Mail
+DOMAIN,imap.mail.com
+DOMAIN,pop.mail.com
+DOMAIN,smtp.mail.com
+
+# Apple iCloud Mail
+DOMAIN-SUFFIX,mail.icloud.com.cn
+DOMAIN-SUFFIX,mail.me.com
+
+# Microsoft Outlook / Microsoft 365
+DOMAIN,imap-mail.outlook.com
+DOMAIN,outlook.office365.com
+DOMAIN,smtp-mail.outlook.com
+DOMAIN,smtp.office365.com
+
+# 中国大陆常见邮箱
+DOMAIN,imap.163.com
+DOMAIN,pop.163.com
+DOMAIN,smtp.163.com
+DOMAIN,imap.126.com
+DOMAIN,pop.126.com
+DOMAIN,smtp.126.com
+DOMAIN,imap.qq.com
+DOMAIN,pop.qq.com
+DOMAIN,smtp.qq.com
+DOMAIN,imap.exmail.qq.com
+DOMAIN,pop.exmail.qq.com
+DOMAIN,smtp.exmail.qq.com
