@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,readest.com
 # 大灰狼小说
 DOMAIN-SUFFIX,langge.cf
 # 人人视频
+USER-AGENT,ElyndorTVCode*
 DOMAIN-SUFFIX,qwapp.top
 DOMAIN-SUFFIX,azwlkj.com
 DOMAIN-SUFFIX,gxzmei.com
