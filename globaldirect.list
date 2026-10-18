@@ -30,6 +30,8 @@ DOMAIN,subtitle-ali.jimihua.plus
 DOMAIN-SUFFIX,koofr.net
 # infini-cloud
 DOMAIN-SUFFIX,infini-cloud.net
+# MiraPlay
+USER-AGENT,tvbox*
 # 待测试
 DOMAIN,music.kukuqaq.com
 DOMAIN-SUFFIX,gyks.cf
