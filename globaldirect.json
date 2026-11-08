@@ -7,54 +7,31 @@
         "yacd.metacubex.one",
         "yacd.haishan.me",
         "d.metacubex.one",
-        "board.zash.run.place"
-      ],
-      "domain": [
+        "board.zash.run.place",
         "cdn.jsdelivr.net",
         "testingcf.jsdelivr.net",
-        "accel.829797.xyz"
+        "accel.829797.xyz",
+        "time.windows.com",
+        "subs.839797.xyz",
+        "subtitle-ali.jimihua.plus",
+        "music.kukuqaq.com",
+        "gyks.cf",
+        "1music.cc",
+        "adfgawidhioawjd.site"
       ],
       "domain_suffix": [        
-        "ghproxy.com"
-      ],
-      "domain": [
-        "time.windows.com"
-      ],
-      "domain": [
-        "subs.839797.xyz"
-      ],
-      "domain_suffix": [        
-        "readest.com"
-      ],
-      "domain_suffix": [        
-        "langge.cf"
-      ],
-      "domain_suffix": [        
+        "ghproxy.com",
+        "readest.com",
+        "langge.cf",
         "qwapp.top",
         "azwlkj.com",
         "gxzmei.com",
         "rrmj.plus",
         "yichengwlkj.com",
-        "qwdjapp.com"
-      ],
-      "domain": [        
-        "subtitle-ali.jimihua.plus"
-      ],
-      "domain_suffix": [        
-        "koofr.net"
-      ],
-      "domain_suffix": [        
+        "qwdjapp.com",
+        "koofr.net",
         "infini-cloud.net"
-      ],
-      "domain": [
-        "music.kukuqaq.com"
-      ],
-      "domain_suffix": [        
-        "gyks.cf",
-        "1music.cc",
-        "adfgawidhioawjd.site"
       ]
     }
   ]
 }
-
