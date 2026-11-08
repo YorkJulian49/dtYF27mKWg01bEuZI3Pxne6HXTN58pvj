@@ -107,7 +107,6 @@ DOMAIN-SUFFIX,zhenxuanidc.cn
 DOMAIN-SUFFIX,zhenxuancdn.cn
 DOMAIN-SUFFIX,zhenxuancloud.com
 DOMAIN-SUFFIX,zhenxyun.cn
- 
 # PCDN Blockage
 DOMAIN-KEYWORD,smogfly
 DOMAIN-KEYWORD,wuchuyun
