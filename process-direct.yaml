@@ -1,23 +1,38 @@
 payload:
+  # CFnat
   - PROCESS-NAME,CFnat.exe
+  # QQ
   - PROCESS-NAME,QQ.exe
+  # 微信
   - PROCESS-NAME,Weixin.exe
   - PROCESS-NAME,WeChatAppEx.exe
+  # 有道词典
   - PROCESS-NAME,YoudaoDict.exe
   - PROCESS-NAME,YoudaoDictHelper.exe
+  # 阿里云盘
   - PROCESS-NAME,aDrive.exe
+  # 百度网盘
   - PROCESS-NAME,BaiduNetdisk.exe
   - PROCESS-NAME,baidunetdiskhost.exe
   - PROCESS-NAME,BaiduNetdiskUnite.exe
+  # 迅雷
   - PROCESS-NAME,Thunder.exe
   - PROCESS-NAME,xllite.exe
   - PROCESS-NAME,DownloadSDKServer.exe
   - PROCESS-NAME,Xmp.exe
+  # Vibing
   - PROCESS-NAME,Vibing.exe
+  # 向日葵
   - PROCESS-NAME,AweSun.exe
   - PROCESS-NAME,awesun_guard.exe
+  # TomatoNovel
   - PROCESS-NAME,TomatoNovelDownloader.exe
+  # Readest
   - PROCESS-NAME,readest.exe
+  # CFData
   - PROCESS-NAME,CFData.exe
+  # Free-New-Desk
   - PROCESS-NAME,Free New Desk.exe
   - PROCESS-NAME,player-host.exe
+  # 火绒
+  - PROCESS-NAME,HipsDaemon.exe
