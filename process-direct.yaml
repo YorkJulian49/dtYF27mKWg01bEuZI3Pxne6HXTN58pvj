@@ -31,8 +31,7 @@ payload:
   - PROCESS-NAME,readest.exe
   # CFData
   - PROCESS-NAME,CFData.exe
-  # Free-New-Desk
-  - PROCESS-NAME,Free New Desk.exe
-  - PROCESS-NAME,player-host.exe
+  # CineFlow
+  - PROCESS-NAME,CineFlow.exe
   # 火绒
   - PROCESS-NAME,HipsDaemon.exe
