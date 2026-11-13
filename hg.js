@@ -1,4 +1,3 @@
-
 // 黄果短剧 · 映匣（Yingxia / TVBox）JS 源
 // 站点：https://huangguoai.com
 //
@@ -7,9 +6,6 @@
 //
 // 旧版播放接口：
 // GET /api/videos/{id}/play?ep=N&page_texts=0
-//
-// 封面：pic.drleao.cn 使用 AES-128-CBC 加密
-// 需要本地 CFRelay 的 /aesimg 解密服务。
 
 const HG_SITE = "https://huangguoai.com";
 const HG_EDGE = HG_SITE + "/api/edge/request";
@@ -25,8 +21,8 @@ const HG_HEADERS = {
   "Content-Type": "application/json"
 };
 
-// 本地图片解密中继
 const HG_RELAY = "http://127.0.0.1:8848";
+const HG_RELAY_ON = { value: null };
 
 const HG_CHANNELS = [
   { slug: "ai-duanju", name: "AI成人短剧" },
@@ -44,9 +40,34 @@ const HG_RANKS = [
 const HG_PAGE_SIZE = 20;
 
 
-// ==================== 网络请求 ====================
+// ==================== 网络 ====================
 
+function hgRelayAvailable() {
+  if (HG_RELAY_ON.value !== null) return HG_RELAY_ON.value;
+
+  var ok = false;
+
+  try {
+    var ping = req(HG_RELAY + "/ping", {
+      timeout: 1500
+    });
+
+    ok = !!ping &&
+      ping.code === 200 &&
+      String(ping.content || "").indexOf("ok") >= 0;
+
+  } catch (error) {
+    ok = false;
+  }
+
+  HG_RELAY_ON.value = ok;
+  return ok;
+}
+
+
+// RPC 信封调用
 function hgEdge(path, method, bodyBase64, contentType) {
+
   var verb = String(method || "GET").toUpperCase();
 
   var payload = JSON.stringify({
@@ -65,16 +86,20 @@ function hgEdge(path, method, bodyBase64, contentType) {
       body: payload,
       timeout: 20000
     });
+
   } catch (error) {
     throw new Error(
-      "请求失败：" + path + "（" +
-      (error && error.message ? error.message : error) + "）"
+      "请求失败：" + path +
+      "（" +
+      (error && error.message ? error.message : error) +
+      "）"
     );
   }
 
   if (!res || res.code !== 200) {
     throw new Error(
-      "接口 HTTP " + (res ? res.code : "无响应") +
+      "接口 HTTP " +
+      (res ? res.code : "无响应") +
       "：" + path
     );
   }
@@ -89,7 +114,8 @@ function hgEdge(path, method, bodyBase64, contentType) {
     outer = JSON.parse(text);
   } catch (error) {
     throw new Error(
-      "接口返回不是 JSON：" + text.slice(0, 160)
+      "接口返回不是 JSON：" +
+      text.slice(0, 160)
     );
   }
 
@@ -106,60 +132,32 @@ function hgEdge(path, method, bodyBase64, contentType) {
 
 // ==================== 图片处理 ====================
 
-// 封面 URL 处理
 function hgPic(url) {
+
   var value = String(
     url == null ? "" : url
   ).trim();
 
   if (!value) return "";
 
-  // 协议相对地址
-  if (value.indexOf("//") === 0) {
-    value = "https:" + value;
-  }
-
-  // 站内相对地址
-  else if (value.charAt(0) === "/") {
-    value = HG_SITE + value;
-  }
-
   if (!/^https?:\/\//i.test(value)) {
     return "";
   }
 
-  // 黄果加密图片 CDN 必须经过 AES 解密
-  if (/^https?:\/\/pic\.drleao\.cn\//i.test(value)) {
+  if (hgRelayAvailable()) {
     return HG_RELAY +
       "/aesimg?u=" +
       encodeURIComponent(value);
   }
 
-  // 其他图片直接返回
   return value;
 }
 
 
-// 兼容不同封面字段
-function hgCover(item) {
-  if (!item) return "";
-
-  return item.cover ||
-    item.cover_url ||
-    item.titlepic ||
-    item.poster ||
-    item.poster_url ||
-    item.image ||
-    item.image_url ||
-    item.thumbnail ||
-    item.thumb ||
-    "";
-}
-
-
-// ==================== 数据映射 ====================
+// ==================== 数据处理 ====================
 
 function hgDate(text) {
+
   var value = String(
     text == null ? "" : text
   );
@@ -173,8 +171,11 @@ function hgDate(text) {
 
 
 function hgVod(item) {
+
   var id = item && (
-    item.id != null ? item.id : item.video_id
+    item.id != null
+      ? item.id
+      : item.video_id
   );
 
   var name = String(
@@ -183,7 +184,8 @@ function hgVod(item) {
 
   var eps = parseInt(
     (item && item.episode_count) ||
-    (item && item.total_episodes) || 0,
+    (item && item.total_episodes) ||
+    0,
     10
   );
 
@@ -202,9 +204,16 @@ function hgVod(item) {
   }
 
   return {
-    vod_id: String(id == null ? "" : id),
+    vod_id: String(
+      id == null ? "" : id
+    ),
+
     vod_name: name,
-    vod_pic: hgPic(hgCover(item)),
+
+    vod_pic: hgPic(
+      item && (item.cover || item.titlepic)
+    ),
+
     vod_remarks:
       remarks.join(" · ") ||
       hgDate(item && item.new_at)
@@ -213,6 +222,7 @@ function hgVod(item) {
 
 
 function hgList(data) {
+
   var items = (
     data &&
     (data.items || data.list || data.data)
@@ -221,7 +231,9 @@ function hgList(data) {
   var list = [];
 
   for (var i = 0; i < items.length; i++) {
+
     if (!items[i]) continue;
+
     list.push(hgVod(items[i]));
   }
 
@@ -230,18 +242,24 @@ function hgList(data) {
 
 
 function hgPager(data, page, listLength) {
-  var pg = (data && data.pagination) || {};
+
+  var pg = (
+    data && data.pagination
+  ) || {};
 
   var current = parseInt(pg.page, 10) || page;
+
   var pages = parseInt(pg.pages, 10) || 1;
 
   return {
     page: current,
     pagecount: pages,
+
     limit:
       parseInt(pg.size, 10) ||
       listLength ||
       HG_PAGE_SIZE,
+
     total: parseInt(pg.total, 10) || 0
   };
 }
@@ -250,6 +268,7 @@ function hgPager(data, page, listLength) {
 // ==================== 播放地址提取 ====================
 
 function hgPickPlayUrl(info) {
+
   if (!info || typeof info !== "object") {
     return "";
   }
@@ -278,6 +297,7 @@ var SPIDER = {
 
   // 首页分类
   home: function (filter) {
+
     var classes = [
       {
         type_id: "latest",
@@ -286,6 +306,7 @@ var SPIDER = {
     ];
 
     for (var r = 0; r < HG_RANKS.length; r++) {
+
       classes.push({
         type_id: "rank:" + HG_RANKS[r].key,
         type_name: HG_RANKS[r].name
@@ -293,6 +314,7 @@ var SPIDER = {
     }
 
     for (var c = 0; c < HG_CHANNELS.length; c++) {
+
       classes.push({
         type_id: "cate:" + HG_CHANNELS[c].slug,
         type_name: HG_CHANNELS[c].name
@@ -307,15 +329,20 @@ var SPIDER = {
 
   // 首页内容
   homeContent: function (filter) {
+
     var classes = this.home(filter).class;
+
     var list = [];
 
     try {
+
       list = hgList(
         hgEdge(
-          "/api/videos?page=1&size=" + HG_PAGE_SIZE
+          "/api/videos?page=1&size=" +
+          HG_PAGE_SIZE
         )
       );
+
     } catch (error) {
       // 首页失败不阻塞分类
     }
@@ -329,6 +356,7 @@ var SPIDER = {
 
   // 分类
   category: function (tid, pg, filter, extend) {
+
     var typeId = String(
       tid == null ? "latest" : tid
     ).trim() || "latest";
@@ -340,11 +368,13 @@ var SPIDER = {
 
     // 榜单
     if (typeId.indexOf("rank:") === 0) {
+
       var kind = typeId.slice(5);
 
       var ranked = hgList(
         hgEdge(
-          "/api/ranks/" + encodeURIComponent(kind)
+          "/api/ranks/" +
+          encodeURIComponent(kind)
         )
       );
 
@@ -360,20 +390,29 @@ var SPIDER = {
     var path;
 
     if (typeId.indexOf("cate:") === 0) {
+
       path =
         "/api/videos/category/" +
         encodeURIComponent(typeId.slice(5)) +
         "?page=" + page +
         "&size=" + HG_PAGE_SIZE;
+
     } else {
+
       path =
         "/api/videos?page=" + page +
         "&size=" + HG_PAGE_SIZE;
     }
 
     var data = hgEdge(path);
+
     var list = hgList(data);
-    var pager = hgPager(data, page, list.length);
+
+    var pager = hgPager(
+      data,
+      page,
+      list.length
+    );
 
     return {
       list: list,
@@ -387,6 +426,7 @@ var SPIDER = {
 
   // 搜索
   search: function (wd, quick, page) {
+
     var keyword = String(wd || "").trim();
 
     var p = Math.max(
@@ -410,7 +450,12 @@ var SPIDER = {
     );
 
     var list = hgList(data);
-    var pager = hgPager(data, p, list.length);
+
+    var pager = hgPager(
+      data,
+      p,
+      list.length
+    );
 
     return {
       list: list,
@@ -424,6 +469,7 @@ var SPIDER = {
 
   // 详情
   detail: function (ids) {
+
     var id = String(
       Array.isArray(ids) ? ids[0] : (ids || "")
     ).trim();
@@ -433,13 +479,18 @@ var SPIDER = {
     }
 
     var item = hgEdge(
-      "/api/videos/" + encodeURIComponent(id)
+      "/api/videos/" +
+      encodeURIComponent(id)
     );
 
-    var episodes = (item && item.episodes) || [];
+    var episodes = (
+      item && item.episodes
+    ) || [];
+
     var rows = [];
 
     for (var i = 0; i < episodes.length; i++) {
+
       var ep = episodes[i];
 
       if (!ep) continue;
@@ -448,60 +499,81 @@ var SPIDER = {
 
       if (!num) continue;
 
-      var label = String(ep.title || "").trim();
+      var label = String(
+        ep.title || ""
+      ).trim();
 
       if (!label || label.length > 24) {
         label = "第 " + num + " 集";
       }
 
       rows.push(
-        label + "$" + id + "|ep:" + num
+        label +
+        "$" + id +
+        "|ep:" + num
       );
     }
 
     if (!rows.length) {
+
       var count = parseInt(
         (item && item.episode_count) || 0,
         10
       );
 
       for (var n = 1; n <= count; n++) {
+
         rows.push(
-          "第 " + n + " 集$" + id + "|ep:" + n
+          "第 " + n + " 集" +
+          "$" + id +
+          "|ep:" + n
         );
       }
     }
 
     if (!rows.length) {
-      rows.push("正片$" + id + "|ep:1");
+      rows.push(
+        "正片$" + id + "|ep:1"
+      );
     }
 
     var info = [];
 
     if (item && item.description) {
-      info.push(String(item.description).trim());
+      info.push(
+        String(item.description).trim()
+      );
     }
 
     if (item && item.tags && item.tags.length) {
-      info.push("标签：" + item.tags.join(" / "));
+      info.push(
+        "标签：" + item.tags.join(" / ")
+      );
     }
 
     if (item && item.author && item.author.name) {
-      info.push("作者：" + item.author.name);
+      info.push(
+        "作者：" + item.author.name
+      );
     }
 
     if (item && item.episode_count) {
-      info.push("集数：" + item.episode_count);
+      info.push(
+        "集数：" + item.episode_count
+      );
     }
 
     var vod = {
+
       vod_id: id,
 
       vod_name:
         String((item && item.title) || "").trim() ||
         ("黄果短剧 " + id),
 
-      vod_pic: hgPic(hgCover(item)),
+      vod_pic: hgPic(
+        item && item.cover
+      ),
 
       vod_content: info.join("\n"),
 
@@ -519,6 +591,7 @@ var SPIDER = {
   // ==================== 播放 ====================
 
   play: function (flag, id) {
+
     var raw = String(id || "").trim();
 
     if (!raw) {
@@ -527,9 +600,11 @@ var SPIDER = {
 
     // 直链直接放行
     if (/^https?:\/\//i.test(raw)) {
+
       return {
         parse: 0,
         url: raw,
+
         header: {
           "User-Agent": HG_UA,
           "Referer": HG_SITE + "/"
@@ -538,44 +613,69 @@ var SPIDER = {
     }
 
     var vodId = raw;
+
     var ep = 1;
 
     var at = raw.indexOf("|ep:");
 
     if (at >= 0) {
+
       vodId = raw.slice(0, at);
-      ep = parseInt(raw.slice(at + 4), 10) || 1;
+
+      ep = parseInt(
+        raw.slice(at + 4),
+        10
+      ) || 1;
+
     } else if (raw.indexOf("ep:") === 0) {
+
       throw new Error("缺少视频 ID");
     }
 
-    // 优先新版 POST 播放接口
+
+    // 新版 POST 播放接口
     var primaryError = "";
+
     var data = null;
 
     try {
+
       data = hgEdge(
+
         "/api/videos/" +
         encodeURIComponent(vodId) +
         "/episodes/" +
         ep +
         "/playback",
+
         "POST",
+
         "e30=",
+
         "application/json"
       );
+
     } catch (error) {
+
       primaryError = String(
-        error && error.message ? error.message : error
+        error && error.message
+          ? error.message
+          : error
       );
     }
 
+
+    // 提取新版播放地址
     var url = hgPickPlayUrl(data);
+
 
     // 新版失败，回退旧版 GET 接口
     if (!url) {
+
       try {
+
         var legacy = hgEdge(
+
           "/api/videos/" +
           encodeURIComponent(vodId) +
           "/play?ep=" +
@@ -586,10 +686,14 @@ var SPIDER = {
         var legacyUrl = hgPickPlayUrl(legacy);
 
         if (legacyUrl) {
+
           data = legacy;
+
           url = legacyUrl;
         }
+
       } catch (legacyError) {
+
         var legacyMessage = String(
           legacyError && legacyError.message
             ? legacyError.message
@@ -597,6 +701,7 @@ var SPIDER = {
         );
 
         throw new Error(
+
           "新版和旧版播放接口均失败（第 " +
           ep +
           " 集）；新版：" +
@@ -607,7 +712,10 @@ var SPIDER = {
       }
     }
 
+
+    // 没有获取到播放地址
     if (!url) {
+
       var returned = "";
 
       try {
@@ -617,22 +725,32 @@ var SPIDER = {
       }
 
       throw new Error(
+
         "播放接口没有返回可用地址（第 " +
         ep +
         " 集）；" +
+
         (primaryError
           ? "新版接口错误：" + primaryError + "；"
           : "") +
+
         "返回结构：" +
         String(returned || "null").slice(0, 500)
       );
     }
 
+
+    // 返回播放地址
     return {
+
       parse: 0,
+
       url: url,
+
       header: {
+
         "User-Agent": HG_UA,
+
         "Referer": HG_SITE + "/"
       }
     };
