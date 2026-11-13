@@ -35,3 +35,5 @@ payload:
   - PROCESS-NAME,CineFlow.exe
   # 火绒
   - PROCESS-NAME,HipsDaemon.exe
+  # fqapp
+  - PROCESS-NAME,fqapp.exe
