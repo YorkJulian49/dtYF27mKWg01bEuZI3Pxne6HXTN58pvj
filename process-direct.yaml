@@ -37,3 +37,5 @@ payload:
   - PROCESS-NAME,HipsDaemon.exe
   # fqapp
   - PROCESS-NAME,fqapp.exe
+  # lx-music
+  - PROCESS-NAME,lx-music-desktop.exe
