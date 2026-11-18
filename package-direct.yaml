@@ -54,3 +54,4 @@ payload:
   - PROCESS-NAME,org.breezyweather #Breezy Weather
   - PROCESS-NAME,org.handmadeideas.floccus #Floccus
   - PROCESS-NAME,com.fqapp.fqapp #什锦铺
+  - PROCESS-NAME,cn.toside.music.mobile #lx-music
