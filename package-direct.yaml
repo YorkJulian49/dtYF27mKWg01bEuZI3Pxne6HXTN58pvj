@@ -17,7 +17,7 @@ payload:
   - PROCESS-NAME,com.xunlei.downloadprovider #迅雷
   - PROCESS-NAME,com.oray.sunlogin #向日葵远程控制
   - PROCESS-NAME,com.eusoft.eudic #欧路词典
-  - PROCESS-NAME,com.githubtvbox.osc.tk #tvbox
+  - PROCESS-NAME,com.github.tvbox.osc.jun #tvbox
   - PROCESS-NAME,io.legado.app.release #阅读
   - PROCESS-NAME,com.tencent.tmgp.sgame #王者荣耀
   - PROCESS-NAME,com.tencent.lolm #英雄联盟手游
