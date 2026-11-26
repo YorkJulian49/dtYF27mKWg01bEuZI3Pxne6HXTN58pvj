@@ -15,7 +15,7 @@
 [Script]
 🔍 Search.Bag.request = type=http-request, engine=auto, pattern=^https?:\/\/api2?\.smoot\.apple\.(com|cn)\/bag, script-path=https://github.com/NSRingo/Siri/releases/download/v4.2.7/request.bundle.js, argument=CountryCode="{{{CountryCode}}}"&amp;Domains="{{{Domains}}}"&amp;Functions="{{{Functions}}}"&amp;SafariSmartHistory="{{{SafariSmartHistory}}}"&amp;LogLevel="{{{LogLevel}}}"
 
-🔍 Search.Bag.response = type=http-response, engine=auto,, pattern=^https?:\/\/api2?\.smoot\.apple\.(com|cn)\/bag, script-path=https://github.com/NSRingo/Siri/releases/download/v4.2.7/response.bundle.js, requires-body=true, argument=CountryCode="{{{CountryCode}}}"&amp;Domains="{{{Domains}}}"&amp;Functions="{{{Functions}}}"&amp;SafariSmartHistory="{{{SafariSmartHistory}}}"&amp;LogLevel="{{{LogLevel}}}"
+🔍 Search.Bag.response = type=http-response, engine=auto, pattern=^https?:\/\/api2?\.smoot\.apple\.(com|cn)\/bag, script-path=https://github.com/NSRingo/Siri/releases/download/v4.2.7/response.bundle.js, requires-body=true, argument=CountryCode="{{{CountryCode}}}"&amp;Domains="{{{Domains}}}"&amp;Functions="{{{Functions}}}"&amp;SafariSmartHistory="{{{SafariSmartHistory}}}"&amp;LogLevel="{{{LogLevel}}}"
 
 🔍 Search.Search.request = type=http-request, engine=auto, pattern=^https?:\/\/api(2|-.+)\.smoot\.apple\.(com|cn)\/search, script-path=https://github.com/NSRingo/Siri/releases/download/v4.2.7/request.bundle.js, argument=CountryCode="{{{CountryCode}}}"&amp;Domains="{{{Domains}}}"&amp;Functions="{{{Functions}}}"&amp;SafariSmartHistory="{{{SafariSmartHistory}}}"&amp;LogLevel="{{{LogLevel}}}"
 
