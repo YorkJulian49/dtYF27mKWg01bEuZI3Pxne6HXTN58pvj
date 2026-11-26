@@ -4,8 +4,8 @@
 # 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
 
 [Argument]
-iosapps=input,"",tag=商店加速地址
-updates=input,"",tag=升级加速地址
+iosapps = input, "iosapps.itunes.apple.com.download.ks-cdn.com", tag = 商店加速地址
+updates = input, "updates.cdn-apple.com.download.ks-cdn.com", tag = 升级加速地址
 
 [Rule]
 # 加速需要直连
