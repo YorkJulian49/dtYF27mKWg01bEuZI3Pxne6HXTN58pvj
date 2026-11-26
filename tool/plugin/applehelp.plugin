@@ -4,8 +4,8 @@
 # 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
 
 [Argument]
-store=input,"",tag=商店加速地址
-upgrade=input,"",tag=升级加速地址
+iosapps=input,"",tag=商店加速地址
+updates=input,"",tag=升级加速地址
 
 [Rule]
 # 加速需要直连
@@ -13,7 +13,7 @@ DOMAIN-SUFFIX,apps.apple.com,DIRECT
 DOMAIN-SUFFIX,itunes.apple.com,DIRECT
 
 [Host]
-iosapps.itunes.apple.com = ${store}
-updates.cdn-apple.com = ${upgrade}
-updates.cdn-apple.com.akadns.net = ${upgrade}
-updates.g.aaplimg.com = ${upgrade}
+iosapps.itunes.apple.com = ${iosapps}
+updates.cdn-apple.com = ${updates}
+updates.cdn-apple.com.akadns.net = ${updates}
+updates.g.aaplimg.com = ${updates}
