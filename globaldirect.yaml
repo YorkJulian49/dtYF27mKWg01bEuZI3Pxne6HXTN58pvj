@@ -10,14 +10,10 @@ payload:
   - DOMAIN,testingcf.jsdelivr.net
   - DOMAIN-SUFFIX,ghproxy.com
   - DOMAIN-SUFFIX,accel.829797.xyz
-  # windows时间
-  - DOMAIN,time.windows.com
   # sub-store
   - DOMAIN,subs.839797.xyz
   # readest
   - DOMAIN-SUFFIX,readest.com
-  # 大灰狼小说
-  - DOMAIN-SUFFIX,langge.cf
   # 人人视频
   - DOMAIN-SUFFIX,qwapp.top
   - DOMAIN-SUFFIX,azwlkj.com
@@ -26,12 +22,3 @@ payload:
   - DOMAIN-SUFFIX,yichengwlkj.com
   - DOMAIN-SUFFIX,qwdjapp.com
   - DOMAIN,subtitle-ali.jimihua.plus
-  # koofr
-  - DOMAIN-SUFFIX,koofr.net
-  # infini-cloud
-  - DOMAIN-SUFFIX,infini-cloud.net
-  # 待测试
-  - DOMAIN,music.kukuqaq.com
-  - DOMAIN-SUFFIX,gyks.cf
-  - DOMAIN-SUFFIX,1music.cc
-  - DOMAIN-SUFFIX,adfgawidhioawjd.site
