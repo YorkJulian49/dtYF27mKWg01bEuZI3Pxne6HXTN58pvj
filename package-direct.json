@@ -56,7 +56,9 @@
         "org.breezyweather",
         "org.handmadeideas.floccus",
         "com.fqapp.fqapp",
-        "cn.toside.music.mobile"
+        "cn.toside.music.mobile",
+        "app.bilimusic.mobile",
+        "com.android.purebilibili"
       ]
     }
   ]
